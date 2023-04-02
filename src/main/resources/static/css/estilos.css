@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Grotesk:400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,600,600i');
+
+/*Esta primera parte se aplica a toda la pagina*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*En esta parte se aplican los estilos al header*/
+.nav-index {
+    background: linear-gradient(90deg, #FFFFFF 38.02%, rgba(7, 13, 24, 0.3) 100%);
+    height: 80px;
+    width: 100%;
+}
+
+.logo-enlace {
+    position: absolute;
+    width: 322px;
+    height: 108px;
+    left: 16px;
+    top: -60px;
+
+
+}
+
+.logo {
+    height: 40px;
+
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover,
+a:focus {
+    background-size: 100% 500px;
+}
+
+/*aca se pone fondo a la pagina */
+.index {
+    background: url("https://www.taltix.com/wp-content/uploads/2022/04/pexels-ksenia-chernaya-5766609-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*Estilos que se aplican al cuerpo de la pagina (index)*/
+.principal {
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+    background: linear-gradient(90deg, #FFFFFF 38.02%, rgba(7, 13, 24, 0.3) 100%);
+
+}
+
+.contenido {
+    position: absolute;
+    left: 8.33%;
+    right: 55.35%;
+    top: 12.81%;
+    bottom: 66.53%;
+}
+
+h1 {
+    top: 181px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61.04px;
+    line-height: 120%;
+}
+
+.contenido p {
+    height: 140px;
+    width: 584px;
+    left: 120px;
+    top: 473px;
+    border-radius: nullpx;
+
+}
+
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    left: 120px;
+}
+
+button {
+    position: absolute;
+    width: 199px;
+    height: 56px;
+    background: #CF1B87;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(43, 37, 37, 0.12);
+    font-family: 'Space Grotesk';
+    font-weight: 700;
+}
+
+/*A partir de aca se aplican estilos al footer */
+.footer1 {
+    background: #B0007F;
+    width: 100%;
+    height: 511px;
+}
+
+.enlaces {
+    position: absolute;
+    left: 14.1%;
+    right: 77.99%;
+    top: calc(100vh + 124px);
+    bottom: 25.48%;
+}
+
+.enlaces h3 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.enlaces ul {
+    width: 160px;
+}
+
+.enlaces ul li a {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 32px 0px 0px 0px;
+
+}
+
+.iconos-titulo {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.iconos-container {
+    position: absolute;
+    width: 453px;
+    height: 47px;
+    left: 472px;
+    top: calc(100vh + 124px);
+
+}
+
+.info-container {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    position: absolute;
+    left: 51.67%;
+    right: 33.96%;
+
+    bottom: 5.24%;
+    top: calc(100vh + 343px);
+    color: #FFFFFF;
+}
+
+.contactenos {
+    position: absolute;
+    left: 68.54%;
+    right: 21.18%;
+    bottom: 25.48%;
+    top: calc(100vh + 124px);
+}
+
+.contacto {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+/*Aqui se edita el segundo navbar*/
+.nav-header2 {
+    height: 80px;
+    width: 100%;
+    background: rgba(7, 13, 24, 0.72);
+    backdrop-filter: blur(7.5px);
+}
+
+
+.nav-header2 ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.nav-header2 ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.nav-header2 ul li a {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+
+/*cuerpo del about us*/
+.bienvenida {
+    height: calc(100vh - 80px);
+    background: rgba(7, 13, 24, 0.72);
+
+    backdrop-filter: blur(7.5px);
+}
+
+.titulo-bienvenida {
+    position: absolute;
+    left: 300px;
+    right: 6.86%;
+    top: 204px;
+    bottom: 91.11%;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 97.0929px;
+    line-height: 120%;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.792985px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+
+}
+
+.elipse {
+    position: absolute;
+    left: 65.85%;
+    right: -7.41%;
+    top: 0.86%;
+    bottom: 88.45%;
+
+    height: 634.0094742554897px;
+    width: 598.5575691866096px;
+    left: 448.197265625px;
+    top: 11px;
+    border-radius: 0px;
+
+    background: rgba(207, 27, 135, 0.23);
+    transform: rotate(74.25deg);
+    border-radius: 50%;
+}
+
+.boton-opticitas {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 8px;
+
+    position: absolute;
+    left: 40.28%;
+    right: 40.56%;
+    top: 80%;
+    bottom: 88.43%;
+
+    background: rgba(87, 81, 81, 0.56);
+    /* Border/border-white */
+
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(43, 37, 37, 0.12);
+    border-radius: 4px;
+
+    width: 300px;
+    height: 38px;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18.8845px;
+    line-height: 150%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'zero' on;
+
+    color: #FFFFFF;
+}
+
+.bienvenido-container {
+    width: 100%;
+    background: #E5E5E5;
+    top: 100vh;
+
+}
+
+.titulo1 {
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 112%;
+    /* identical to box height, or 55px */
+    color: #2D2D2D;
+    text-align: center;
+    letter-spacing: -0.486372px;
+    text-transform: capitalize;
+    position: absolute;
+    left: 41.11%;
+    right: 41.04%;
+    top: 977px;
+    bottom: 82.6%;
+}
+
+.parrafo1 {
+    position: absolute;
+    left: 11.11%;
+    right: 11.18%;
+    top: 1095px;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+    text-align: center;
+
+    color: #4D4D4D;
+}
+
+.imagen1 {
+    position: absolute;
+    width: 574px;
+    height: 415px;
+    left: 437px;
+    top: 1467px;
+}
+
+.titulo2 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 112%;
+
+    letter-spacing: -0.486372px;
+    text-transform: capitalize;
+
+    color: #353F4B;
+    position: absolute;
+    width: 179px;
+    height: 55px;
+    left: 117px;
+    top: 2054px;
+}
+
+.parrafo2 {
+    position: absolute;
+    left: 8.12%;
+    right: 8.54%;
+    top: 2130px;
+    bottom: 55.24%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+
+    color: rgba(77, 77, 77, 0.8);
+}
+
+.imagen2 {
+    position: absolute;
+    width: 758px;
+    height: 808px;
+    left: 341px;
+    top: 2683px;
+}
+
+.parrafo3 {
+    position: absolute;
+    left: 8.33%;
+    right: 8.33%;
+    top: 3536px;
+    bottom: 35.07%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.mision-container {
+    position: absolute;
+    width: 100%;
+    height: 305.58px;
+    left: 0px;
+    top: 3896px;
+
+    background: linear-gradient(0deg, rgba(207, 27, 135, 0.82), rgba(207, 27, 135, 0.82)), url(.jpg), #2D2D2D;
+}
+
+.titulo3 {
+    position: absolute;
+    left: 8.33%;
+    right: 8.3%;
+    top: 72px;
+    bottom: 25.75%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+
+    color: #FCFCFC;
+}
+
+.parrafo4 {
+
+    position: absolute;
+    left: 8.33%;
+    right: 8.3%;
+    top: 68.28%;
+    bottom: 25.75%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+
+    color: #FCFCFC;
+
+}
+
+.vision-container {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    left: 0px;
+    top: calc(3896px + 305.58px);
+
+    background: white;
+}
+
+.titulo4 {
+    position: absolute;
+    width: 140px;
+    height: 55px;
+    left: 120px;
+    top: 5%;
+
+    /* H2 B */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 112%;
+    /* identical to box height, or 55px */
+
+    letter-spacing: -0.486372px;
+    text-transform: capitalize;
+
+    color: #353F4B;
+
+}
+
+.parrafo5 {
+    position: absolute;
+    left: 8.33%;
+    right: 40.14%;
+    top: 20%;
+    bottom: 23.32%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+
+    color: rgba(77, 77, 77, 0.8);
+}
+
+.imagen3 {
+    position: absolute;
+    width: 362px;
+    height: 360px;
+    left: 901px;
+    top: 25.42px;
+}
+
+.Corporativo-container {
+    position: absolute;
+    width: 100%;
+    height: 356px;
+    left: 0px;
+    top: 4617px;
+    background: linear-gradient(0deg, rgba(207, 27, 135, 0.82), rgba(207, 27, 135, 0.82)), url(.jpg), #2D2D2D;
+}
+
+.titulo5 {
+    position: absolute;
+    left: 8.33%;
+    right: 69.58%;
+    top: 72px;
+    bottom: 20%;
+
+    /* H2 B */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 112%;
+    /* or 55px */
+
+    letter-spacing: -0.486372px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.parrafo6 {
+    position: absolute;
+    left: 8.33%;
+    right: 8.3%;
+    top: 153px;
+    bottom: 13.59%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+
+    color: #FCFCFC;
+}
+
+.Principios-container {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    left: 0px;
+    top: calc(4617px + 356px);
+
+    background: white;
+}
+
+.titulo6 {
+    position: absolute;
+    width: 563px;
+    height: 55px;
+    left: 121px;
+    top: 32px;
+
+    /* H2 B */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 112%;
+    /* identical to box height, or 55px */
+
+    letter-spacing: -0.486372px;
+    text-transform: capitalize;
+
+    color: #353F4B;
+}
+
+.parrafo7 {
+    position: absolute;
+    left: 8.4%;
+    right: 37.43%;
+    top: 106px;
+    bottom: 9.61%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+
+    color: rgba(77, 77, 77, 0.8);
+}
+
+.imagen4 {
+    position: absolute;
+    width: 492px;
+    height: 318px;
+    left: 981px;
+    top: 32px;
+}
+
+/*Footer2 del about us*/
+
+.footer2 {
+    position: absolute;
+    background: #B0007F;
+    width: 100%;
+    height: 511px;
+    top: 5420px;
+}
+
+.enlaces-footer2 {
+    position: absolute;
+    left: 14.1%;
+    right: 77.99%;
+    top: 124px;
+    bottom: 25.48%;
+}
+
+.enlaces-footer2 h3 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.enlaces-footer2 ul {
+    width: 160px;
+}
+
+.enlaces-footer2 ul li a {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: 32px 0px 0px 0px;
+
+}
+
+.iconos-titulo-footer2 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.iconos-container-footer2 {
+    position: absolute;
+    width: 453px;
+    height: 47px;
+    left: 472px;
+    top: 124px;
+
+}
+
+.info-container-footer2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    position: absolute;
+    left: 51.67%;
+    right: 33.96%;
+
+    bottom: 5.24%;
+    top: 360px;
+    color: #FFFFFF;
+}
+
+.contactenos-footer2 {
+    position: absolute;
+    left: 68.54%;
+    right: 21.18%;
+    bottom: 25.48%;
+    top: 124px;
+}
+
+.contacto-footer2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.logo-footer-footer2 {
+    position: absolute;
+    left: -250px;
+    top: -50px;
+}
+
+/*Body del about us fondo*/
+.acerca-de-nosotros {
+    background: url("https://latarde.com/wp-content/webp-express/webp-images/uploads/2021/04/examen-ocular.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

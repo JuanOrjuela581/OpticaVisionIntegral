@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="author" content="Jhoan Cardenas, Juan Buitrago,Juan Orjuela">
+    <meta name="keyword" content="OPTICA">
+    <meta name="description" content="Proyecto optica">
+    <meta name="revised" content="10-04-2023">
+    <title>Optica Vision Integral</title>
+    <link rel="stylesheet" th:href="@{/css/estilos.css}" />
+    <link rel="stylesheet" th:href="@{/css/estilos2.css}" />
+
+</head>
+
+<!-- Inicio Navbar -->
+<nav class="nav-index" th:fragment="navbar">
+  <a href="index.php" class="logo-enlace">
+    <img th:src="@{/images/logo-footer.png}" width="244px" height="198px">
+  </a>
+
+  <ul>
+    <li><a href="index.php" class="active">Inicio</a></li>
+    <li><a href="src\views\AboutUs\aboutUs.php">Acerca de Nosotros</a></li>
+    <li><a href="src\views\Opticitas\Opticitas.php">Opticitas</a></li>
+    <li><a href="src\views\Servicios\servicios.php">Servicios</a></li>
+    <li><a href="src\views\Sedes\sedes.php">Sedes</a></li>
+    <li><a href="src\views\AtencionUsuario\AtencionUsuario.php">Atencion al usuario</a></li>
+  </ul>
+</nav>
+<!--Fin Navbar-->
+
+<!--Inicio Footer-->
+<footer class="footer1" th:fragment="footer">
+    <div class="enlaces">
+        <h3 class="enlaces-titulo">Compañia</h3>
+        <ul>
+            <li><a href="index.php" class="active">Inicio</a></li>
+            <li><a href="src\views\AboutUs\aboutUs.php">Acerca de Nosotros</a></li>
+            <li><a href="src\views\Opticitas\Opticitas.php">Opticitas</a></li>
+            <li><a href="src\views\Servicios\servicios.php">Servicios</a></li>
+            <li><a href="src\views\Sedes\sedes.php">Sedes</a></li>
+        </ul>
+    </div>
+
+    <div class="iconos-container">
+        <h3 class="iconos-titulo">Siguenos</h3>
+        <br>
+        <a href="https://www.facebook.com" class="icono" target="blank"> <img th:src="@{/images/facebook.png}"  alt="logo" width="50" height="50px"></a>
+        <a href="https://www.instagram.com" class="icono" target="blank"> <img th:src="@{/images/instagram.png}"  alt="logo" width="50" height="50px"></a>
+    </div>
+
+    <div class="info-container">
+        <img th:src="@{/images/logo-footer.png}" width="244px" height="198px" class="logo-footer-footer2">
+        <span>C.c. Unicentro L-1040 Remansos De Sta Inés</span>
+        <br>
+        <br>
+        <span>© Optica visión SAS 2023.</span>
+    </div>
+
+    <div class="contactenos">
+        <h3 class="iconos-titulo">Contactanos</h3>
+        <span class="contacto">opticavisionintegral@siau.com</span>
+    </div>
+</footer>
+<!--Fin Footer-->
+
+</html>
