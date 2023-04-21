@@ -104,13 +104,21 @@ ALTER TABLE proveedores_opticas ADD CONSTRAINT proveedores_opticas_opticas_FK
 FOREIGN KEY (id_optica) REFERENCES opticas(id_optica)ON DELETE CASCADE;
 
 ALTER TABLE opticas ADD CONSTRAINT opticas_usuarios_FK
+<<<<<<< HEAD
 FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE;
+=======
+FOREIGN KEY (id_usuario) REFERENCES opticas(id_usuario) ON DELETE CASCADE;
+>>>>>>> c41f6f30f0f98b17e502fa1ce5eb00200be6690a
 
 ALTER TABLE opticas ADD CONSTRAINT opticas_pacientes_FK
 FOREIGN KEY (id_paciente) REFERENCES pacientes(id_paciente) ON DELETE CASCADE;
 
 ALTER TABLE pacientes ADD CONSTRAINT pacientes_ciudades_FK
+<<<<<<< HEAD
 FOREIGN KEY (id_ciudad) REFERENCES ciudades(id_ciudad) ON DELETE CASCADE;
+=======
+FOREIGN KEY (id_ciudad) REFERENCES pacientes(id_ciudad) ON DELETE CASCADE;
+>>>>>>> c41f6f30f0f98b17e502fa1ce5eb00200be6690a
 
 ALTER TABLE citas ADD CONSTRAINT citas_pacientes_FK
 FOREIGN KEY (id_paciente) REFERENCES pacientes(id_paciente) ON DELETE CASCADE;
