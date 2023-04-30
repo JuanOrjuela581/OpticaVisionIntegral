@@ -1,7 +1,7 @@
 package com.usta.opticavisionintegral.models.services;
 
 import com.usta.opticavisionintegral.Entities.opticaEntity;
-import com.usta.opticavisionintegral.model.dao.opticadao;
+import com.usta.opticavisionintegral.models.dao.opticaDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -12,36 +12,36 @@ import java.util.List;
 public class OpticaServicesImplement implements IopticaServices {
 
     @Autowired
-    private opticadao opticadao;
+    private opticaDAO opticaDAO;
 
     @Override
     @Transactional(readOnly = true)
     public List<opticaEntity> finAll(){
-        return (List<opticaEntity>) opticadao.findAll();
+        return (List<opticaEntity>) opticaDAO.findAll();
     }
 
     @Override
     @Transactional
     public void save(opticaEntity optica){
-        opticadao.save(optica);
+        opticaDAO.save(optica);
     }
 
     @Override
     @Transactional
     public void remove(Long id){
-        opticadao.deleteById(id);
+        opticaDAO.deleteById(id);
     }
 
     @Override
     @Transactional
     public opticaEntity updateOptica(opticaEntity optica){
-        return opticadao.save(optica);
+        return opticaDAO.save(optica);
     }
 
     @Override
     @Transactional(readOnly = true)
     public opticaEntity findOne(Long id) {
-        return opticadao.findById(id).orElse(null);
+        return opticaDAO.findById(id).orElse(null);
     }
 
 }
