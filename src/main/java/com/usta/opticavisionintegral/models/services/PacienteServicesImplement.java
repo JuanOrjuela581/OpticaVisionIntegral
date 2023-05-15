@@ -39,6 +39,12 @@ public class PacienteServicesImplement implements IpacienteServices{
     }
 
     @Override
+    @Transactional
+    public void changeState(Long id) {
+        pacienteDAO.changeState(id);
+    }
+
+    @Override
     @Transactional(readOnly = true)
     public pacienteEntity findOne(Long id) {
         return pacienteDAO.findById(id).orElse(null);

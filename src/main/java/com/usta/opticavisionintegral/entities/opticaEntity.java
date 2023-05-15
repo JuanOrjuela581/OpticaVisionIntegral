@@ -27,6 +27,10 @@ public class opticaEntity implements Serializable {
     @Column(name = "direccion_optica")
     private String direccion_optica;
 
+    @NotNull
+    @Column(name = "estado")
+    public Boolean estado;
+
     public Long getId_optica() {
         return id_optica;
     }
@@ -49,5 +53,13 @@ public class opticaEntity implements Serializable {
 
     public void setDireccion_optica(String direccion_optica) {
         this.direccion_optica = direccion_optica;
+    }
+
+    public Boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
     }
 }

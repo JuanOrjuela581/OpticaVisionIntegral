@@ -39,6 +39,12 @@ public class OpticaServicesImplement implements IopticaServices {
     }
 
     @Override
+    @Transactional
+    public void changeState(Long id) {
+        opticaDAO.changeState(id);
+    }
+
+    @Override
     @Transactional(readOnly = true)
     public opticaEntity findOne(Long id) {
         return opticaDAO.findById(id).orElse(null);

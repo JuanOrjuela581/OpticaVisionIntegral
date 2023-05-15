@@ -13,5 +13,7 @@ public interface IciudadServices {
 
     public ciudadEntity updateCiudad(ciudadEntity ciudad);
 
+    public void changeState(Long id);
+
     public ciudadEntity findOne(Long id);
 }

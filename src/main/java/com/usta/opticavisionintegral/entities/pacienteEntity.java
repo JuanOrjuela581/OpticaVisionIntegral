@@ -50,6 +50,10 @@ public class pacienteEntity implements Serializable {
     @Column(name = "correo_paciente")
     private String correo_paciente;
 
+    @NotNull
+    @Column(name = "estado")
+    public Boolean estado;
+
     @JoinColumn(name = "id_optica", referencedColumnName = "id_optica")
     @ManyToOne(fetch = FetchType.LAZY)
     private opticaEntity id_optica;
@@ -112,6 +116,14 @@ public class pacienteEntity implements Serializable {
 
     public void setCorreo_paciente(String correo_paciente) {
         this.correo_paciente = correo_paciente;
+    }
+
+    public Boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
     }
 
     public opticaEntity getId_optica() {

@@ -14,5 +14,7 @@ public interface IpacienteServices {
 
     public pacienteEntity updatePaciente(pacienteEntity paciente);
 
+    public void changeState(Long id);
+
     public pacienteEntity findOne(Long id);
 }

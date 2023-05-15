@@ -51,6 +51,16 @@ public class opticaController {
         return "redirect:/listarOpticas";
     }
 
+    @RequestMapping(value = "/cambiarEstadoOptica/{id}")
+    public String cambiarEstadoOptica(@PathVariable(value = "id") Long id){
+        if (id>0){
+            iopticaServices.changeState(id);
+        }else {
+            return "redirect:/error500";
+        }
+        return "redirect:/listarOpticas";
+    }
+
     @GetMapping("/editarOptica/{id}")
     public String mostrarFormularioOptica(@PathVariable(value = "id")Long id, Model model){
         model.addAttribute("titulo","Editar Optica");

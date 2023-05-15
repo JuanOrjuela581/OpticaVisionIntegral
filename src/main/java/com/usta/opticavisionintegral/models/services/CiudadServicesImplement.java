@@ -36,6 +36,12 @@ public class CiudadServicesImplement implements IciudadServices{
     }
 
     @Override
+    @Transactional
+    public void changeState(Long id) {
+        ciudadDAO.changeState(id);
+    }
+
+    @Override
     @Transactional(readOnly = true)
     public ciudadEntity findOne(Long id) {
         return ciudadDAO.findById(id).orElse(null);
