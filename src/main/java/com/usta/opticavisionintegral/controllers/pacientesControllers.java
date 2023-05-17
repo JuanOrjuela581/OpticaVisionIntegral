@@ -61,6 +61,16 @@ public class pacientesControllers {
         return "redirect:/listarPacientes";
 
     }
+
+    @RequestMapping(value = "/cambiarEstadoPaciente/{id}")
+    public String cambiarEstadoPaciente(@PathVariable(value = "id") Long id){
+        if (id>0){
+            ipacienteServices.changeState(id);
+        }else {
+            return "redirect:/error500";
+        }
+        return "redirect:/listarPacientes";
+    }
     @GetMapping("/editarPaciente/{id}")
     public String mostrarFormularioPaciente(@PathVariable(value = "id")Long id, Model model){
         model.addAttribute("titulo","Editar Paciente");

@@ -20,6 +20,10 @@ public class ciudadEntity implements Serializable {
     @Column(name = "nombre_ciudad")
     private String nombre_ciudad;
 
+    @NotNull
+    @Column(name = "estado")
+    public Boolean estado;
+
     public Long getId_ciudad() {
         return id_ciudad;
     }
@@ -34,5 +38,13 @@ public class ciudadEntity implements Serializable {
 
     public void setNombre_ciudad(String nombre_ciudad) {
         this.nombre_ciudad = nombre_ciudad;
+    }
+
+    public Boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
     }
 }

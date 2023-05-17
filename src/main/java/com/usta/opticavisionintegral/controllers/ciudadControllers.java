@@ -50,6 +50,16 @@ public class ciudadControllers {
         return "redirect:/listasCiudades";
 
     }
+
+    @RequestMapping(value = "/cambiarEstadoCiudad/{id}")
+    public String cambiarEstadoCiudad(@PathVariable(value = "id") Long id){
+        if (id>0){
+            iciudadServices.changeState(id);
+        }else {
+            return "redirect:/error500";
+        }
+        return "redirect:/listasCiudades";
+    }
     @GetMapping("/editarCiudad/{id}")
     public String mostrarFormularioCiudad(@PathVariable(value = "id")Long id, Model model){
         model.addAttribute("titulo","Editar Ciudad");

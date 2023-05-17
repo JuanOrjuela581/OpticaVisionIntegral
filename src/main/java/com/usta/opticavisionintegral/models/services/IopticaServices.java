@@ -14,6 +14,8 @@ public interface IopticaServices {
 
     public opticaEntity updateOptica(opticaEntity optica);
 
+    public void changeState(Long id);
+
     public opticaEntity findOne(Long id);
 
 }
