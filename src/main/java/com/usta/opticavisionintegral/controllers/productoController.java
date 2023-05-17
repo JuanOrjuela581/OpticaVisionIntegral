@@ -1,6 +1,7 @@
 package com.usta.opticavisionintegral.controllers;
 
 import com.usta.opticavisionintegral.entities.productoEntity;
+import com.usta.opticavisionintegral.models.services.IopticaService;
 import com.usta.opticavisionintegral.models.services.IproductoService;
 import com.usta.opticavisionintegral.models.services.IproveedorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,7 +33,7 @@ public class productoController {
         public String formularioCrearProducto(Model model){
             model.addAttribute("producto", new productoEntity());
             model.addAttribute("titulo","Crear Producto");
-            model.addAttribute("opti", iopticaService.selectOneUni());
+           // model.addAttribute("opti", IopticaService.selectOneUni());
             return "crearOptica";
         }
         @PostMapping(value = "crearDirector")
@@ -73,7 +74,7 @@ public class productoController {
         public String mostrarFormularioEditarProducto(@PathVariable(value = "id") Long id, Model model) {
             model.addAttribute("titulo", "Editar Producto");
             model.addAttribute("productoactualizar", iproductoService.findOne(id));
-            model.addAttribute("opt", iproveedorService.selectOneProv());
+           // model.addAttribute("opt", iproveedorService.selectOneProv());
             return "editarProducto";
         }
 

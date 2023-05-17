@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Service
-public class CiudadServicesImplement implements IciudadServices{
+public class CiudadServicesImplement implements IciudadService {
 
     @Autowired
     private  ciudadDAO ciudadDAO;
