@@ -8,6 +8,10 @@
     <meta name="description" content="Proyecto optica">
     <meta name="revised" content="10-04-2023">
     <title>Optica Vision Integral</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" th:href="@{/css/estilos.css}" />
     <link rel="stylesheet" th:href="@{/css/estilos2.css}" />
 
@@ -22,7 +26,11 @@
   <ul>
     <li><a th:href="@{/Index}">Inicio</a> </li>
     <li><a th:href="@{/AboutUs}">Acerca de Nosotros</a> </li>
+<<<<<<< Updated upstream
     <li><a th:href="@{/Opticitas}">Opticitas</a></li>
+=======
+    <li><a th:href="@{/crearPaciente}">Opticitas</a></li>
+>>>>>>> Stashed changes
     <li><a th:href="@{/Servicios}">Servicios</a></li>
     <li><a th:href="@{/Sedes}">Sedes</a></li>
     <li><a th:href="@{/AtencionUsuario}">Atencion al usuario</a></li>
@@ -37,7 +45,11 @@
         <ul>
             <li><a th:href="@{/Index}">Inicio</a> </li>
             <li><a th:href="@{/AboutUs}">Acerca de Nosotros</a> </li>
+<<<<<<< Updated upstream
             <li><a th:href="@{/Opticitas}">Opticitas</a></li>
+=======
+            <li><a th:href="@{/crearPaciente}">Opticitas</a></li>
+>>>>>>> Stashed changes
             <li><a th:href="@{/Servicios}">Servicios</a></li>
             <li><a th:href="@{/Sedes}">Sedes</a></li>
             <li><a th:href="@{/AtencionUsuario}">Atencion al usuario</a></li>
@@ -63,7 +75,31 @@
         <h3 class="iconos-titulo">Contactanos</h3>
         <span class="contacto">opticavisionintegral@siau.com</span>
     </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
 </footer>
 <!--Fin Footer-->
 
+
+<!--Navbar del CRUD-->
+<nav th:fragment="navbarCRUD" class="nav-headerblanco">
+    <a th:href="@{/Index}" class="inicio-navbar-crud">Inicio</a>
+
+    <ul>
+        <li><a th:href="@{/listarPacientes}" class="active">Listar Pacientes</a></li>
+        <li><a th:href="@{/listarProductos}">Listar Productos</a></li>
+        <li><a th:href="@{/listarProveedores}">Listar Proveedores</a></li>
+        <li><a th:href="@{/#}">Listar Citas</a></li>
+    </ul>
+</nav>
 </html>

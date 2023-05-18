@@ -1,6 +1,10 @@
 package com.usta.opticavisionintegral.models.services;
 
+<<<<<<< Updated upstream
 import com.usta.opticavisionintegral.Entities.pacienteEntity;
+=======
+import com.usta.opticavisionintegral.entities.pacienteEntity;
+>>>>>>> Stashed changes
 import com.usta.opticavisionintegral.models.dao.pacienteDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

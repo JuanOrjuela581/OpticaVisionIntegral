@@ -19,7 +19,11 @@ public class PageController {
 
     @GetMapping("/Opticitas")
     public String opticitas(Model model){
+<<<<<<< Updated upstream
         return "Opticitas";
+=======
+        return "crearPaciente";
+>>>>>>> Stashed changes
     }
 
     @GetMapping("/AtencionUsuario")

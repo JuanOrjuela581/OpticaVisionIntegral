@@ -1,6 +1,10 @@
 package com.usta.opticavisionintegral.models.services;
 
+<<<<<<< Updated upstream
 import com.usta.opticavisionintegral.Entities.pacienteEntity;
+=======
+import com.usta.opticavisionintegral.entities.pacienteEntity;
+>>>>>>> Stashed changes
 
 import java.util.List;
 

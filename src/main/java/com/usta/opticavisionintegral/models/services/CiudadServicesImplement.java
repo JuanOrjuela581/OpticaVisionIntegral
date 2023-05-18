@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.Entities.ciudadEntity;
+import com.usta.opticavisionintegral.entities.ciudadEntity;
 import com.usta.opticavisionintegral.models.dao.ciudadDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

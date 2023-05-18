@@ -180,6 +180,27 @@ button {
 
 }
 
+.enlaces ul li a::before, enlaces ul li a::after{
+    content: '';
+    border-bottom: 2px solid white;
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+}
+.enlaces ul li a:hover::before{
+    opacity: 1;
+    width: 70%;
+    bottom: -5px;
+    left: 0;
+}
+
+.enlaces ul li a:hover::after{
+    opacity: 1;
+    width: 40%;
+    bottom: -10px;
+    right: 0;
+}
+
 .iconos-titulo {
     font-family: 'Space Grotesk';
     font-style: normal;

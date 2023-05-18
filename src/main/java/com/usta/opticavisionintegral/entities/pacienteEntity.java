@@ -1,7 +1,8 @@
-package com.usta.opticavisionintegral.Entities;
+package com.usta.opticavisionintegral.entities;
 
 import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
+
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

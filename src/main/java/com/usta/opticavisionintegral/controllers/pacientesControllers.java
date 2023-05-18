@@ -1,6 +1,10 @@
 package com.usta.opticavisionintegral.controllers;
 
+<<<<<<< Updated upstream
 import com.usta.opticavisionintegral.Entities.pacienteEntity;
+=======
+import com.usta.opticavisionintegral.entities.pacienteEntity;
+>>>>>>> Stashed changes
 import com.usta.opticavisionintegral.models.services.IciudadService;
 import com.usta.opticavisionintegral.models.services.IopticaService;
 import com.usta.opticavisionintegral.models.services.IpacienteService;
