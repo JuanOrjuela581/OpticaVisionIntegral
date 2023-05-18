@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head th:replace="layout/layout :: head"></head>
+
+<body>
+<div class="nav-header2">
+    <nav th:replace="layout/layout :: navbar"></nav>
+</div>
+
+<div class="bienvenida">
+    <h1 class="titulo-servicios">Contamos con la mejor calidad en nuestros servicios</h1>
+    <p class="parrafo-servicios">Servicio al cliente se trata de cubrir y rebasar las expectativas que tienen los clientes. Es sumamente importante porque de esto puede depender el éxito del negocio, el número de clientes, la fidelización de los mismos.</p>
+
+
+    <a th:href="@{/Sedes}"> <button  class="boton-opticitas" >
+        Conozca Nuestras Sedes
+    </button></a>
+    <img class="servicios-image" th:src="@{/images/image_señora.png}" alt="logo" width="372px" height="567px">
+</div>
+
+<div class="contenido-servicios">
+    <h2 class="TITULO_SERVICIOS">servicios Con Integridad</h2>
+
+    <h2 class="TITLE-SERVICIOS-CONSULTAS">Consultas</h2>
+
+    <div class="linea"></div>
+
+    <img class="image_servicios" th:src="@{/images/image_servicios.png}" alt="" width="345px" height="343px">
+    <img class="image_doc" th:src="@{/images/image_doc.png}" alt="" width="345px" height="343px">
+    <ul class="lista-servicios">
+        <br />
+        <li>Optometría</li>
+        <li>Consulta Especializada</li>
+        <li>Retinología</li>
+        <li>Otras consultas subespecializadas</li>
+    </ul>
+
+    <br />
+
+    <h2 class="TITLE-Apoyo">Apoyo diagnostico</h2>
+    <ul class="lista-Apoyo">
+        <br />
+
+        <li>Biometría Ocular</li>
+        <li>Angiografía Ocular</li>
+        <li>Campo visual central</li>
+        <li>Paquimetría</li>
+        <li>Topografía corneal</li>
+        <li>Ecografía Ocular</li>
+        <li>Microscopía Escular</li>
+        <li>Interferometría</li>
+        <li>Recuento de células endoteliale</li>
+        <li>Fotografía a color de segmento posterior</li>
+        <li>Tomografia</li>
+    </ul>
+
+    <br />
+
+    <h2 class="TITLE-Complementacion">Complementación terapéutica</h2>
+    <ul class="lista-complementacion">
+        <br />
+
+        <li>Tratamientos ortópticos</li>
+        <li>Tratamienros pleópticos</li>
+    </ul>
+
+    <br />
+
+    <h2 class="TITLE-Cirugia">Cirugia</h2>
+    <ul class="lista-cirugia">
+        <br />
+
+        <li>Extracción de catarata</li>
+        <li>Cirugía de vítreo y retina</li>
+        <li>Transplante corneal</li>
+        <li>Cirugía refractiva</li>
+        <li>Microcirugía ocular</li>
+        <li>Cirugía glaucoma</li>
+        <li>Cirugía oculoplástica</li>
+        <li>Pterigio</li>
+    </ul>
+
+    <br />
+
+    <h2 class="TITLE-Asesoria"> Asesoria y venta de optica</h2>
+    <ul class="lista-asesoria">
+        <br />
+
+        <li>Adaptación lentes de contacto</li>
+        <li>Adaptación lentes oftálmicos
+        <li>Adaptación prótesis oculares
+        <li>Servicio post venta</li>
+    </ul>
+
+
+
+</div>
+
+<footer class="footer-servicios" >
+    <div th:replace="layout/layout :: footer"></div>
+</footer>
+</body>
+</html>

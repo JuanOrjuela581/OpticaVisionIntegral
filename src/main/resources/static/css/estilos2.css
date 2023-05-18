@@ -1,0 +1,1416 @@
+.nav-headerblanco {
+    background: #FFFFFF;
+    height: 80px;
+    width: 100%;
+}
+
+.contenido-opticita {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: #FFFFFF;
+
+}
+
+.titulos-opticita {
+    position: absolute;
+    left: 0.9%;
+    right: 0.97%;
+    top: 5.79%;
+    bottom: 76.29%;
+
+
+}
+
+.crea-cuenta {
+    position: absolute;
+    width: 489px;
+    height: 83px;
+    left: 500px;
+    top: 317px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24.5789px;
+    line-height: 144.9%;
+    /* or 36px */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #5DB8E7;
+
+}
+
+.TITULO_OPTICITA {
+    position: absolute;
+    left: 28.64%;
+    right: 28.64%;
+    top: 110PX;
+    bottom: 85.12%;
+
+    /* H1 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61.04px;
+    line-height: 120%;
+    /* or 73px */
+
+    text-align: center;
+    letter-spacing: -0.498531px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #0B85C3;
+
+}
+
+.container-formulario {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 65%;
+
+    height: 602px;
+    background: #FCFCFC;
+    border: 0.5px solid #E2E6F5;
+    box-shadow: 0px 5px 37px rgba(56, 66, 100, 0.0880136);
+    border-radius: 24px;
+
+}
+
+.Nombre {
+    position: absolute;
+    left: 6.92%;
+    right: 88.75%;
+    top: 5%;
+    bottom: 60.35%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+    height: 25px;
+    width: 223px;
+    display: flex;
+    align-items: center;
+
+    color: #96999E;
+}
+
+.Apellido {
+    position: absolute;
+    left: 32.42%;
+    right: 63.25%;
+    top: 5%;
+    bottom: 60.35%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+
+    height: 25px;
+    width: 223px;
+
+    align-items: center;
+
+    color: #96999E;
+}
+
+.E-mail {
+    position: absolute;
+    left: 6.92%;
+    right: 89.58%;
+    top: 116px;
+    bottom: 52.62%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+    height: 25px;
+    width: 223px;
+    display: flex;
+    align-items: center;
+
+    color: #96999E;
+}
+
+.Pais {
+
+    position: absolute;
+    left: 32.42%;
+    right: 61.83%;
+    top: 116px;
+    bottom: 52.29%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+    height: 25px;
+    width: 223px;
+    display: flex;
+    align-items: center;
+
+    color: #2D2D2D;
+}
+
+.Direccion {
+    position: absolute;
+    left: 6.92%;
+    right: 81.25%;
+    top: 192px;
+    bottom: 44.93%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+    height: 25px;
+    width: 223px;
+    display: flex;
+    align-items: center;
+
+    color: #96999E;
+}
+
+.Numerodedocumento {
+    position: absolute;
+    left: 32.58%;
+    right: 54.92%;
+    top: 192px;
+    bottom: 44.95%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+    height: 25px;
+    width: 223px;
+    display: flex;
+    align-items: center;
+
+    color: #96999E;
+}
+
+
+.Fechadenacimiento {
+    position: absolute;
+    left: 6.92%;
+    right: 81.75%;
+    top: 266px;
+    bottom: 37.33%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+    height: 25px;
+    width: 223px;
+    display: flex;
+    align-items: center;
+
+    color: #2D2D2D;
+}
+
+.btn_btn-primary {
+    position: absolute;
+    width: 166px;
+    left: calc(50% - 166px/2 - 435px);
+    top: 68.5%;
+    bottom: 25.79%;
+
+    background: #CF1B87;
+    /* Border/border-white */
+
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(43, 37, 37, 0.12);
+    border-radius: 4px;
+}
+
+.formulario-fondo {
+    /* Rectangle 516 */
+    position: absolute;
+    left: 57.5%;
+    right: 0.5%;
+    top: 0%;
+    bottom: 5.61%;
+
+    background: #B0007F;
+    border-radius: 0px 24px 24px 0px;
+}
+
+.titulo-fondo {
+    position: absolute;
+    left: 208px;
+    right: 1.5%;
+    top: 5%;
+    bottom: 59.53%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+    text-align: center;
+    letter-spacing: -0.240783px;
+    font-feature-settings: 'zero' on;
+
+    color: #FFFFFF;
+}
+
+.parrafo-fondo {
+    position: absolute;
+    left: 270px;
+    right: 1.5%;
+    top: 67px;
+    bottom: 51.78%;
+
+    /* P5 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    font-feature-settings: 'zero' on;
+
+    color: rgba(231, 236, 251, 0.8);
+}
+
+.celular-fondo {
+    position: absolute;
+    left: 270px;
+    right: 12.33%;
+    top: 50.66%;
+    bottom: 47.4%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+
+
+    color: rgba(231, 236, 251, 0.8);
+
+}
+
+.correo-fondo {
+    position: absolute;
+    left: 270px;
+    right: 5.08%;
+    top: 55.15%;
+    bottom: 42.92%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+
+
+    color: rgba(231, 236, 251, 0.8);
+
+}
+
+.direccion-fondo {
+    position: absolute;
+    left: 270px;
+    right: 10.33%;
+    top: 59.63%;
+    bottom: 36.49%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    /* or 19px */
+
+
+    color: rgba(231, 236, 251, 0.8);
+}
+
+.imagen-formulario{
+    position: absolute;
+width: 127px;
+height: 91px;
+left: 78px;
+top: 393px;
+}
+
+/*footer del opticitas*/
+.footer3 {
+    position: absolute;
+    background: #B0007F;
+    width: 100%;
+    height: 511px;
+    top: 1200px;
+}
+
+
+/*Aqui se edita los estilos de la pagina servicios*/
+
+
+.titulo-servicios {
+    position: absolute;
+    left: 42.36%;
+    right: 8.4%;
+    top: 176px;
+    bottom: 86.52%;
+
+    /* H1 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61.04px;
+    line-height: 120%;
+    /* or 73px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.498531px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #FFFFFF;
+}
+
+
+.image_servicios {
+    position: absolute;
+    width: 345px;
+    height: 343px;
+    left: 76px;
+    top: 1458px;
+}
+
+.image_doc {
+    position: absolute;
+    width: 302px;
+    height: 301px;
+    left: 133px;
+    top: 1901px;
+}
+
+.parrafo-servicios {
+    position: absolute;
+    left: 42.36%;
+    right: 8.4%;
+    top: 280px;
+    bottom: 78.01%;
+
+    /* P1 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    /* or 140% */
+
+
+    color: #E6DDDD;
+
+}
+
+.servicios-image {
+    position: absolute;
+    width: 372px;
+    height: 567px;
+    left: 194px;
+    top: 50px;
+
+}
+
+.contenido-servicios {
+    height: 1900px;
+    background: #E5E5E5;
+}
+
+.TITULO_SERVICIOS {
+    position: absolute;
+    width: 623px;
+    height: 55px;
+    left: 415px;
+    top: 1079px;
+
+    /* H2 B */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 112%;
+    /* identical to box height, or 55px */
+
+    letter-spacing: -0.486372px;
+    text-transform: capitalize;
+
+    color: #CF1B87;
+}
+
+.TITLE-SERVICIOS-CONSULTAS {
+    position: absolute;
+    left: 44.24%;
+    right: 46.46%;
+    top: 1205px;
+    bottom: 59.63%;
+
+    /* H4 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 120%;
+    /* identical to box height, or 38px */
+
+    letter-spacing: -0.240783px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+}
+
+.lista-servicios {
+    position: absolute;
+    left: 44.24%;
+    right: 11.95%;
+    top: 1256px;
+    bottom: 56.09%;
+
+    /* P5 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+
+}
+
+.TITLE-Apoyo {
+    position: absolute;
+    left: 44.24%;
+    right: 36.11%;
+    top: 1433px;
+    bottom: 52.22%;
+
+    /* H4 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 120%;
+    /* identical to box height, or 38px */
+
+    letter-spacing: -0.240783px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+}
+
+.lista-Apoyo {
+    position: absolute;
+    left: 44.24%;
+    right: 11.95%;
+    top: 1480px;
+    bottom: 43.36%;
+
+    /* P5 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+
+}
+
+.TITLE-Complementacion {
+    position: absolute;
+    left: 44.27%;
+    right: 24.21%;
+    top: 1808px;
+    bottom: 40.05%;
+
+    /* H4 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 120%;
+    /* identical to box height, or 38px */
+
+    letter-spacing: -0.240783px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+
+}
+
+.lista-complementacion {
+    position: absolute;
+    left: 44.27%;
+    right: 11.92%;
+    top: 1859px;
+    bottom: 38.06%;
+
+    /* P5 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+}
+
+.TITLE-Cirugia {
+    position: absolute;
+    left: 44.27%;
+    right: 48.44%;
+    top: 1971px;
+    bottom: 34.75%;
+
+    /* H4 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 120%;
+    /* identical to box height, or 38px */
+
+    letter-spacing: -0.240783px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+}
+
+.lista-cirugia {
+    position: absolute;
+    left: 44.27%;
+    right: 11.92%;
+    top: 2022px;
+    bottom: 28.09%;
+
+    /* P5 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+}
+
+.TITLE-Asesoria {
+    position: absolute;
+    left: 44.27%;
+    right: 28.03%;
+    top: 2276px;
+    bottom: 24.85%;
+
+    /* H4 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 120%;
+    /* identical to box height, or 38px */
+
+    letter-spacing: -0.240783px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+}
+
+.lista-asesoria {
+    position: absolute;
+    left: 44.27%;
+    right: 11.92%;
+    top: 2327px;
+    bottom: 21.31%;
+
+    /* P5 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+
+}
+
+.linea {
+    position: absolute;
+    width: 1077px;
+    height: 4px;
+    left: 0px;
+    top: 1750px;
+    background: #CF1B87;
+    transform: rotate(90deg);
+}
+
+.footer-servicios {
+    position: absolute;
+    background: #B0007F;
+    width: 100%;
+    height: 511px;
+    top: calc(100vh + 1900px);
+
+}
+
+/*aqui se empieza a editar las sedes*/
+
+.titulo-sedes {
+    position: absolute;
+    left: 27.64%;
+    right: 27.64%;
+    top: 227.75px;
+    bottom: 87.4%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 146.329px;
+    line-height: 103.5%;
+    /* or 151px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1.19511px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #FFFFFF;
+
+}
+
+
+.contenido-sedes {
+    height: calc(3697px - 100vh);
+    top: 100vh;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+
+.tittle-Casanare {
+    position: absolute;
+    left: 8.33%;
+    right: 78.89%;
+    top: 1139px;
+    bottom: 71.79%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41.4787px;
+    line-height: 120%;
+    /* identical to box height, or 50px */
+
+    letter-spacing: -0.319595px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+}
+
+.image-casanare {
+    position: absolute;
+    width: 488px;
+    height: 386px;
+    left: 831.6px;
+    top: 1047px;
+
+}
+
+.lista-casanare {
+    position: absolute;
+    left: 8.38%;
+    right: 35.49%;
+    top: 1198.73px;
+    bottom: 69.28%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.2371px;
+    line-height: 150%;
+    /* or 32px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+}
+
+.tittle-Cundinamarca {
+    position: absolute;
+    left: 50.66%;
+    right: 29.41%;
+    top: 1657px;
+    bottom: 59.5%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41.7934px;
+    line-height: 120%;
+    /* or 50px */
+
+    letter-spacing: -0.32202px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+
+}
+
+.image-cundinamarca {
+    position: absolute;
+    width: 495px;
+    height: 362px;
+    left: calc(50% - 495px/2 - 352.5px);
+    top: 1601px;
+
+}
+
+.lista-cundinamarca {
+    position: absolute;
+    left: 50.68%;
+    right: -1.86%;
+    top: 1717.81px;
+    bottom: 57.73%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.3982px;
+    line-height: 150%;
+    /* or 32px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+}
+
+.tittle-santander {
+    position: absolute;
+    left: 8.37%;
+    right: 36.08%;
+    top: 2192px;
+    bottom: 46.83%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41.1799px;
+    line-height: 120%;
+    /* or 49px */
+
+    letter-spacing: -0.317293px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+
+}
+
+.image-santander {
+    position: absolute;
+    width: 488px;
+    height: 386px;
+    left: 831.6px;
+    top: 2107px;
+}
+
+.lista-santander {
+    position: absolute;
+    left: 8.37%;
+    right: 36.08%;
+    top: 2301.37px;
+    bottom: 44.64%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.0841px;
+    line-height: 150%;
+    /* identical to box height, or 32px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+}
+
+.tittle-boyaca {
+    position: absolute;
+    left: 50.66%;
+    right: 38.92%;
+    top: 2722px;
+    ;
+    bottom: 34.23%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 41.5503px;
+    line-height: 120%;
+    /* identical to box height, or 50px */
+
+    letter-spacing: -0.320147px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+}
+
+.image-boyaca {
+    position: absolute;
+    width: 492px;
+    height: 386px;
+    left: 120px;
+    top: 2637px;
+}
+
+.lista-boyaca {
+    position: absolute;
+    left: 50.68%;
+    right: 1.12%;
+    top: 2832.36px;
+    bottom: 29.77%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.2737px;
+    line-height: 150%;
+    /* or 32px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+
+}
+
+.tittle-arauca {
+    position: absolute;
+    left: 8.33%;
+    right: 81.74%;
+    top: 3167px;
+    ;
+    bottom: 23.65%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42.803px;
+    line-height: 120%;
+    /* or 51px */
+
+    letter-spacing: -0.329799px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #353F4B;
+}
+
+.image-arauca {
+    position: absolute;
+    width: 488px;
+    height: 386px;
+    left: 831.6px;
+    top: 3167px;
+
+}
+
+.lista-arauca {
+    position: absolute;
+    left: 8.38%;
+    right: 33.88%;
+    top: 3294.38px;
+    bottom: 19.49%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21.9152px;
+    line-height: 150%;
+    /* or 33px */
+
+    font-feature-settings: 'zero' on;
+
+    color: #4D4D4D;
+}
+
+.footer-sedes {
+    position: absolute;
+    background: #B0007F;
+    width: 100%;
+    height: 511px;
+    top: 3697px;
+}
+
+/*Desde aqui va el codigo de  atencion al usuario*/
+
+.contenido-atencion {
+    height: calc(2662px - 100vh);
+    top: 100vh;
+    background: #FFFFFF;
+    width: 100%;
+}
+
+.tittle-derechos {
+    position: absolute;
+    left: 28.44%;
+    right: 28.44%;
+    top: 964px;
+    bottom: 67.79%;
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 112%;
+    /* or 55px */
+
+    text-align: center;
+    letter-spacing: -0.486372px;
+    text-transform: capitalize;
+
+    color: #2D2D2D;
+}
+
+.derecho-1 {
+    position: absolute;
+    left: 25%;
+    right: 50.56%;
+    top: 1205px;
+    bottom: 57.36%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+}
+
+.derecho-2 {
+    position: absolute;
+    left: 25%;
+    right: 50.56%;
+    top: 1484px;
+    bottom: 47.67%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+}
+
+.derecho-3 {
+    position: absolute;
+    left: 25%;
+    right: 50.56%;
+    top: 1753px;
+    bottom: 40.01%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+}
+
+.derecho-4 {
+    position: absolute;
+    left: 25%;
+    right: 50.56%;
+    top: 2014px;
+    bottom: 31.95%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+}
+
+.derecho-5 {
+    position: absolute;
+    left: 25%;
+    right: 50.56%;
+    top: 2278px;
+    bottom: 23.8%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+}
+
+.derecho-6 {
+    top: 1214px;
+    position: absolute;
+    left: 73.82%;
+    right: 2.15%;
+    bottom: 57.09%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+
+}
+
+.derecho-7 {
+    top: 1538px;
+    position: absolute;
+    left: 73.61%;
+    right: 1.94%;
+    bottom: 49.49%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+
+}
+
+.derecho-8 {
+    top: 1797px;
+    position: absolute;
+    left: 73.82%;
+    right: 1.74%;
+    bottom: 41.22%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+
+}
+
+.derecho-9 {
+    top: 2003px;
+    position: absolute;
+    left: 73.82%;
+    right: 2.22%;
+    bottom: 30.01%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+
+}
+
+.derecho-10 {
+    top: 2326px;
+    position: absolute;
+    left: 73.61%;
+    right: 2.22%;
+
+    bottom: 20.87%;
+
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.2932px;
+    line-height: 112%;
+    /* or 28px */
+
+    letter-spacing: -0.251933px;
+
+    color: #000000;
+}
+
+
+
+
+.footer-atencion {
+    position: absolute;
+    background: #B0007F;
+    width: 100%;
+    height: 511px;
+    top: 2662px;
+}
+
+.image-derecho1 {
+    position: absolute;
+    left: 2.85%;
+    right: 75.83%;
+    top: 1178px;
+    bottom: 56.53%;
+}
+
+.image-derecho2 {
+    position: absolute;
+    left: 2.85%;
+    right: 75.83%;
+    top: 1449px;
+    bottom: 47.67%;
+}
+
+.image-derecho3 {
+    position: absolute;
+    left: 2.85%;
+    right: 75.83%;
+    top: 1730px;
+    bottom: 40.01%;
+}
+
+.image-derecho4 {
+    position: absolute;
+    left: 2.85%;
+    right: 75.83%;
+    top: 1996px;
+    bottom: 31.95%;
+}
+
+.image-derecho5 {
+    position: absolute;
+    left: 2.85%;
+    right: 75.83%;
+    top: 2250px;
+    bottom: 24.11%;
+}
+
+.image-derecho6 {
+    position: absolute;
+    left: 51.25%;
+    right: 26.88%;
+    top: 1160px;
+    bottom: 57.09%;
+}
+
+.image-derecho7 {
+    position: absolute;
+    left: 51.25%;
+    right: 28.4%;
+    top: 1471px;
+    bottom: 47.92%;
+}
+
+.image-derecho8 {
+    position: absolute;
+    left: 51.25%;
+    right: 26.88%;
+    top: 1730px;
+    bottom: 40.01%;
+}
+
+.image-derecho9 {
+    position: absolute;
+    left: 51.25%;
+    right: 28.4%;
+    top: 2003px;
+    bottom: 31.95%;
+}
+
+.image-derecho10 {
+    position: absolute;
+    left: 51.25%;
+    right: 28.4%;
+    top: 2330px;
+    bottom: 22.54%;
+
+}
+
+/*footer del crud*/
+
+.footer-crud{
+    position: absolute;
+    background: #B0007F;
+    width: 100%;
+    height: 511px;
+    top: 100vh;
+}
+
+
+/*header crud*/
+.inicio-navbar-crud{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.enlace-crear{
+    color: #CF1B87;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/*fecha cita editar*/
+
+.fecha-cita{
+    position: absolute;
+    left: 25.42%;
+    right: 63.25%;
+    top: 5%;
+    bottom: 60.35%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+}
+
+.paciente{
+    position: absolute;
+    left: 25.42%;
+    right: 63.25%;
+    top: 20%;
+    bottom: 60.35%;
+
+    /* P3 */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head th:replace="layout/layout :: head"></head>
+<body>
+<nav th:replace="layout/layout :: navbarCRUD"></nav>
+
+<h1 class="page-content" th:text="${titulo}"></h1>
+<div class="container">
+    <table id="example" class="table table-striped-columns">
+        <thead class="table-info">
+        <tr>
+            <th>idProducto</th>
+            <th>codigoProducto</th>
+            <th>nombreProducto</th>
+            <th>descripcionProducto</th>
+            <th>precioProducto</th>
+            <th>existenciasProducto</th>
+            <th>NombreProveedor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="producto: ${productos}" th:if="${producto.estado} == true">
+
+            <td th:text="${producto.idproducto}"></td>
+            <td th:text="${producto.codigo}"></td>
+            <td th:text="${producto.nombre}"></td>
+            <td th:text="${producto.descripcion}"></td>
+            <td th:text="${producto.precio}"></td>
+            <td th:text="${producto.existencias}"></td>
+            <td th:text="${producto.idproveedor.nombre}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/crearProducto}" class="btn btn-primary">Registrar Producto</a>
+</div>
+
+<footer class="footer3" >
+    <div th:replace="layout/layout :: footer"></div>
+</footer>
+</body>
+</html>
