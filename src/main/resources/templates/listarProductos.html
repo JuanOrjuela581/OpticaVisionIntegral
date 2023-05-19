@@ -22,13 +22,13 @@
         <tbody>
         <tr th:each="producto: ${productos}" th:if="${producto.estado} == true">
 
-            <td th:text="${producto.idproducto}"></td>
-            <td th:text="${producto.codigo}"></td>
-            <td th:text="${producto.nombre}"></td>
-            <td th:text="${producto.descripcion}"></td>
-            <td th:text="${producto.precio}"></td>
-            <td th:text="${producto.existencias}"></td>
-            <td th:text="${producto.idproveedor.nombre}"></td>
+            <td th:text="${producto.id_producto}"></td>
+            <td th:text="${producto.codigo_producto}"></td>
+            <td th:text="${producto.nombre_producto}"></td>
+            <td th:text="${producto.descripcion_producto}"></td>
+            <td th:text="${producto.precio_producto}"></td>
+            <td th:text="${producto.existencias_producto}"></td>
+            <td th:text="${producto.idproveedor_producto.nombre_proveedor}"></td>
 
         </tr>
         </tbody>

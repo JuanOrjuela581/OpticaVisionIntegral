@@ -17,6 +17,7 @@ public interface IdoctorService {
     public void changeState(Long id);
 
     public doctorEntity findOne(Long id);
-}
 
+    public List<doctorEntity> selectOneDoc();
+}
 

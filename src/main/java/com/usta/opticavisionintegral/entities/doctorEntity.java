@@ -1,12 +1,11 @@
 package com.usta.opticavisionintegral.entities;
 
 import jakarta.persistence.*;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.util.Date;
+
 @Entity
 @Table(name = "doctores")
 public class doctorEntity implements  Serializable {
@@ -15,71 +14,74 @@ public class doctorEntity implements  Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "iddoctor")
-    private Long iddoctor;
+    @Column(name = "id_doctor")
+    private Long id_doctor;
 
     @NotNull
     @Size(min = 1, max = 30)
-    @Column(name = "nombre")
-    private String nombre;
+    @Column(name = "nombre_doctor")
+    private String nombre_doctor;
 
     @NotNull
     @Size(min = 1, max = 30)
-    @Column(name = "apellido")
-    private String apellido;
+    @Column(name = "apellido_doctor")
+    private String apellido_doctor;
 
     @NotNull
     @Size(min = 1, max = 30)
-    @Column(name = "especialidad")
-    private String especialidad;
+    @Column(name = "especialidad_doctor")
+    private String especialidad_doctor;
 
     @NotNull
     @Size(min = 1, max = 10)
-    @Column(name = "aniosExp")
-    private String aniosExp;
+    @Column(name = "aniosExp_doctor")
+    private String aniosExp_doctor;
 
     @NotNull
     @Column(name = "estado")
     private Boolean estado;
 
-    public Long getIddoctor() {
-        return iddoctor;
+    @OneToOne(mappedBy = "id_doctor")
+    private citaEntity id_cita;
+
+    public Long getId_doctor() {
+        return id_doctor;
     }
 
-    public void setIddoctor(Long iddoctor) {
-        this.iddoctor = iddoctor;
+    public void setId_doctor(Long id_doctor) {
+        this.id_doctor = id_doctor;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombre_doctor() {
+        return nombre_doctor;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre_doctor(String nombre) {
+        this.nombre_doctor = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellido_doctor() {
+        return apellido_doctor;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellido_doctor(String apellido) {
+        this.apellido_doctor = apellido;
     }
 
-    public String getEspecialidad() {
-        return especialidad;
+    public String getEspecialidad_doctor() {
+        return especialidad_doctor;
     }
 
-    public void setEspecialidad(String especialidad) {
-        this.especialidad = especialidad;
+    public void setEspecialidad_doctor(String especialidad) {
+        this.especialidad_doctor = especialidad;
     }
 
-    public String getAniosExp() {
-        return aniosExp;
+    public String getAniosExp_doctor() {
+        return aniosExp_doctor;
     }
 
-    public void setAniosExp(String aniosExp) {
-        this.aniosExp = aniosExp;
+    public void setAniosExp_doctor(String aniosExp) {
+        this.aniosExp_doctor = aniosExp;
     }
 
     public Boolean getEstado() {
