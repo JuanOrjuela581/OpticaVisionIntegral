@@ -1,10 +1,10 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.Entities.pacienteEntity;
+import com.usta.opticavisionintegral.entities.pacienteEntity;
 
 import java.util.List;
 
-public interface IpacienteServices {
+public interface IpacienteService {
 
     public List<pacienteEntity> finAll();
 

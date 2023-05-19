@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.Entities.ciudadEntity;
+import com.usta.opticavisionintegral.entities.ciudadEntity;
 import com.usta.opticavisionintegral.models.dao.ciudadDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Service
-public class CiudadServicesImplement implements IciudadServices{
+public class CiudadServicesImplement implements IciudadService {
 
     @Autowired
     private  ciudadDAO ciudadDAO;

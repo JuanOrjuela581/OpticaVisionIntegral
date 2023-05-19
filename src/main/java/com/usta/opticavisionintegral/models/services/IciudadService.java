@@ -1,10 +1,10 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.Entities.ciudadEntity;
+import com.usta.opticavisionintegral.entities.ciudadEntity;
 
 import java.util.List;
 
-public interface IciudadServices {
+public interface IciudadService {
     public List<ciudadEntity> finAll();
 
     public void save(ciudadEntity ciudad);

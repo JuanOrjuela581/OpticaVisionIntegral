@@ -1,9 +1,9 @@
 package com.usta.opticavisionintegral.controllers;
 
-import com.usta.opticavisionintegral.Entities.pacienteEntity;
-import com.usta.opticavisionintegral.models.services.IciudadServices;
-import com.usta.opticavisionintegral.models.services.IopticaServices;
-import com.usta.opticavisionintegral.models.services.IpacienteServices;
+import com.usta.opticavisionintegral.entities.pacienteEntity;
+import com.usta.opticavisionintegral.models.services.IciudadService;
+import com.usta.opticavisionintegral.models.services.IopticaService;
+import com.usta.opticavisionintegral.models.services.IpacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,19 +17,19 @@ import javax.validation.Valid;
 public class pacientesControllers {
 
     @Autowired
-    private IpacienteServices ipacienteServices;
+    private IpacienteService ipacienteService;
 
     @Autowired
-    private IopticaServices iopticaServices;
+    private IopticaService iopticaService;
 
     @Autowired
-    private IciudadServices iciudadServices;
+    private IciudadService iciudadService;
 
 
     @GetMapping("listarPacientes")
     public String listarPacientes (Model model){
         model.addAttribute("titulo","Listado de Pacientes");
-        model.addAttribute("pacientes",ipacienteServices.finAll());
+        model.addAttribute("pacientes", ipacienteService.finAll());
         return "listarPacientes";
     }
 
@@ -37,8 +37,8 @@ public class pacientesControllers {
     public String formularioCrearPaciente(Model model){
         model.addAttribute("paciente", new pacienteEntity());
         model.addAttribute("titulo", "Crear Paciente");
-        model.addAttribute("optica", iopticaServices.finAll());
-        model.addAttribute("ciudad", iciudadServices.finAll());
+        model.addAttribute("optica", iopticaService.finAll());
+        model.addAttribute("ciudad", iciudadService.finAll());
         return "crearPaciente";
     }
     @PostMapping(value = "crearPaciente")
@@ -46,7 +46,7 @@ public class pacientesControllers {
         if (result.hasErrors()){
             return "crearPaciente";
         }
-        ipacienteServices.save(paciente);
+        ipacienteService.save(paciente);
         status.setComplete();
         return "redirect:/listarPacientes";
     }
@@ -54,7 +54,7 @@ public class pacientesControllers {
     @RequestMapping(value = "/eliminarPaciente/{id}")
     public String eliminarByIdPaciente(@PathVariable(value = "id") Long id){
         if (id>0){
-            ipacienteServices.remove(id);
+            ipacienteService.remove(id);
         }else{
             return "redirect:/error500";
         }
@@ -65,7 +65,7 @@ public class pacientesControllers {
     @RequestMapping(value = "/cambiarEstadoPaciente/{id}")
     public String cambiarEstadoPaciente(@PathVariable(value = "id") Long id){
         if (id>0){
-            ipacienteServices.changeState(id);
+            ipacienteService.changeState(id);
         }else {
             return "redirect:/error500";
         }
@@ -74,14 +74,14 @@ public class pacientesControllers {
     @GetMapping("/editarPaciente/{id}")
     public String mostrarFormularioPaciente(@PathVariable(value = "id")Long id, Model model){
         model.addAttribute("titulo","Editar Paciente");
-        model.addAttribute("pacienteActualizar",ipacienteServices.findOne(id));
-        model.addAttribute("optica", iopticaServices.finAll());
-        model.addAttribute("ciudad",iciudadServices.finAll());
+        model.addAttribute("pacienteActualizar", ipacienteService.findOne(id));
+        model.addAttribute("optica", iopticaService.finAll());
+        model.addAttribute("ciudad", iciudadService.finAll());
         return "editarPaciente";
     }
     @PostMapping("editarPaciente/{id}")
     public String actualizarSeccional(@PathVariable(value = "id") Long id, @ModelAttribute("pacienteActualizar") pacienteEntity paciente){
-        pacienteEntity pacienteExistente = ipacienteServices.findOne(id);
+        pacienteEntity pacienteExistente = ipacienteService.findOne(id);
         pacienteExistente.setIdentificacion_paciente(paciente.getIdentificacion_paciente());
         pacienteExistente.setNombres_paciente(paciente.getNombres_paciente());
         pacienteExistente.setApellido_paciente(paciente.getApellido_paciente());
@@ -91,7 +91,7 @@ public class pacientesControllers {
         pacienteExistente.setId_optica(paciente.getId_optica());
         pacienteExistente.setId_ciudad(paciente.getId_ciudad());
 
-        ipacienteServices.updatePaciente(pacienteExistente);
+        ipacienteService.updatePaciente(pacienteExistente);
         return "redirect:/listarPacientes";
     }
 

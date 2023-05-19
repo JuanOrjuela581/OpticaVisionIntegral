@@ -32,7 +32,7 @@ public class productoController {
         public String formularioCrearProducto(Model model){
             model.addAttribute("producto", new productoEntity());
             model.addAttribute("titulo","Crear Producto");
-            model.addAttribute("opti", iopticaService.selectOneUni());
+           // model.addAttribute("opti", IopticaService.selectOneUni());
             return "crearOptica";
         }
         @PostMapping(value = "crearDirector")
@@ -73,7 +73,7 @@ public class productoController {
         public String mostrarFormularioEditarProducto(@PathVariable(value = "id") Long id, Model model) {
             model.addAttribute("titulo", "Editar Producto");
             model.addAttribute("productoactualizar", iproductoService.findOne(id));
-            model.addAttribute("opt", iproveedorService.selectOneProv());
+           // model.addAttribute("opt", iproveedorService.selectOneProv());
             return "editarProducto";
         }
 
@@ -81,11 +81,11 @@ public class productoController {
         public String actualizarProducto(@PathVariable(value = "id") Long id, @ModelAttribute("productoactualizar") productoEntity producto){
             productoEntity productoExistente = iproductoService.findOne(id);
             productoExistente.setEstado(true);
-            productoExistente.setCodigo(producto.getCodigo());
-            productoExistente.setNombre(producto.getNombre());
-            productoExistente.setDescripcion(producto.getDescripcion());
-            productoExistente.setPrecio(producto.getPrecio());
-            productoExistente.setIdproveedor(producto.getIdproveedor());
+            productoExistente.setCodigo_producto(producto.getCodigo_producto());
+            productoExistente.setNombre_producto(producto.getNombre_producto());
+            productoExistente.setDescripcion_producto(producto.getDescripcion_producto());
+            productoExistente.setPrecio_producto(producto.getPrecio_producto());
+            productoExistente.setIdproveedor_producto(producto.getIdproveedor_producto());
 
             iproductoService.updateProducto(productoExistente);
             return "redirect:/listarProductos";

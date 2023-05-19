@@ -1,10 +1,10 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.Entities.opticaEntity;
+import com.usta.opticavisionintegral.entities.opticaEntity;
 
 import java.util.List;
 
-public interface IopticaServices {
+public interface IopticaService {
 
     public List<opticaEntity> finAll();
 

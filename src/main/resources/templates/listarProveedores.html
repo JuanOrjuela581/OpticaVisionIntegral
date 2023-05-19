@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head th:replace="layout/layout :: head"></head>
+
+
+<body>
+<nav th:replace="layout/layout :: navbarCRUD"></nav>
+
+<h1 class="page-content" th:text="${titulo}"></h1>
+<div class="container">
+  <table id="example" class="table table-striped-columns">
+    <thead class="table-info">
+    <tr>
+
+      <th>Id</th>
+      <th>Nombre </th>
+      <th>Telefono</th>
+      <th>Correo</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="proveedor: ${proveedor}" th:if="${proveedor.estado} == true">
+
+      <td th:text="${proveedor.id_proveedor}"></td>
+      <td th:text="${proveedor.nombre_proveedor}"></td>
+      <td th:text="${proveedor.telefono_proveedor}"></td>
+      <td th:text="${proveedor.correo_proveedor}"></td>
+
+
+    </tr>
+    </tbody>
+  </table>
+  <a th:href="@{/crearProducto}" class="btn btn-primary">Registrar Proveedor</a>
+</div>
+
+<footer class="footer3" >
+  <div th:replace="layout/layout :: footer"></div>
+</footer>
+
+</body>
+</html>

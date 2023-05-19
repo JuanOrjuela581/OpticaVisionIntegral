@@ -1,4 +1,4 @@
-package com.usta.opticavisionintegral.Entities;
+package com.usta.opticavisionintegral.entities;
 
 import jakarta.persistence.*;
 

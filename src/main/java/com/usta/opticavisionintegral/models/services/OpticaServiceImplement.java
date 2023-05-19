@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.Entities.opticaEntity;
+import com.usta.opticavisionintegral.entities.opticaEntity;
 import com.usta.opticavisionintegral.models.dao.opticaDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class OpticaServicesImplement implements IopticaServices {
+public class OpticaServiceImplement implements IopticaService {
 
     @Autowired
     private opticaDAO opticaDAO;

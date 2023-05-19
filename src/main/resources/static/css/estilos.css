@@ -43,6 +43,8 @@ nav ul li {
     margin: 0 5px;
 }
 
+
+
 nav ul li a {
     color: black;
     font-size: 18px;
@@ -50,12 +52,30 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    position: relative;
 }
 
-a:hover,
-a:focus {
-    background-size: 100% 500px;
+nav ul li a::before, nav ul li a::after{
+    content: '';
+    border-bottom: 2px solid #CF1B87;
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
 }
+nav ul li a:hover::before{
+    opacity: 1;
+    width: 70%;
+    bottom: -5px;
+    left: 0;
+}
+
+nav ul li a:hover::after{
+    opacity: 1;
+    width: 40%;
+    bottom: -10px;
+    right: 0;
+}
+
 
 /*aca se pone fondo a la pagina */
 .index {
@@ -158,6 +178,27 @@ button {
     color: #FFFFFF;
     margin: 32px 0px 0px 0px;
 
+}
+
+.enlaces ul li a::before, enlaces ul li a::after{
+    content: '';
+    border-bottom: 2px solid white;
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+}
+.enlaces ul li a:hover::before{
+    opacity: 1;
+    width: 70%;
+    bottom: -5px;
+    left: 0;
+}
+
+.enlaces ul li a:hover::after{
+    opacity: 1;
+    width: 40%;
+    bottom: -10px;
+    right: 0;
 }
 
 .iconos-titulo {
@@ -680,7 +721,7 @@ button {
     top: 5420px;
 }
 
-.enlaces-footer2 {
+.footer2 enlaces {
     position: absolute;
     left: 14.1%;
     right: 77.99%;
@@ -688,7 +729,7 @@ button {
     bottom: 25.48%;
 }
 
-.enlaces-footer2 h3 {
+.footer2 h3 {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;

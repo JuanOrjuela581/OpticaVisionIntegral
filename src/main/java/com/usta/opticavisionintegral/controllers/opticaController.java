@@ -1,7 +1,7 @@
 package com.usta.opticavisionintegral.controllers;
 
-import com.usta.opticavisionintegral.Entities.opticaEntity;
-import com.usta.opticavisionintegral.models.services.IopticaServices;
+import com.usta.opticavisionintegral.entities.opticaEntity;
+import com.usta.opticavisionintegral.models.services.IopticaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,12 +15,12 @@ import javax.validation.Valid;
 public class opticaController {
 
     @Autowired
-    private IopticaServices iopticaServices;
+    private IopticaService iopticaService;
 
     @GetMapping("listarOpticas")
     public String listarOpticas(Model model){
         model.addAttribute("titulo","listar Opticas");
-        model.addAttribute("opticas",iopticaServices.finAll());
+        model.addAttribute("opticas", iopticaService.finAll());
         return "listarOpticas";
     }
 
@@ -36,7 +36,7 @@ public class opticaController {
         if (result.hasErrors()){
             return "error 500";
         }
-        iopticaServices.save(optica);
+        iopticaService.save(optica);
         status.setComplete();
         return "redirect:/listarOpticas";
     }
@@ -44,7 +44,7 @@ public class opticaController {
     @RequestMapping(value = "/eliminarOptica/{id}")
     public String eliminarById(@PathVariable(value = "id") Long id){
         if (id>0){
-            iopticaServices.remove(id);
+            iopticaService.remove(id);
         }else{
             return "redirect:/error500";
         }
@@ -54,7 +54,7 @@ public class opticaController {
     @RequestMapping(value = "/cambiarEstadoOptica/{id}")
     public String cambiarEstadoOptica(@PathVariable(value = "id") Long id){
         if (id>0){
-            iopticaServices.changeState(id);
+            iopticaService.changeState(id);
         }else {
             return "redirect:/error500";
         }
@@ -64,17 +64,17 @@ public class opticaController {
     @GetMapping("/editarOptica/{id}")
     public String mostrarFormularioOptica(@PathVariable(value = "id")Long id, Model model){
         model.addAttribute("titulo","Editar Optica");
-        model.addAttribute("actualizarOptica",iopticaServices.findOne(id));
+        model.addAttribute("actualizarOptica", iopticaService.findOne(id));
         return "editarOptica";
     }
 
     @PostMapping("editarOptica/{id}")
     public String actualizarOptica(@PathVariable(value = "id") Long id, @ModelAttribute("actualizarOptica")opticaEntity optica){
-        opticaEntity opticaExistente = iopticaServices.findOne(id);
+        opticaEntity opticaExistente = iopticaService.findOne(id);
         opticaExistente.setNombre_optica(optica.getNombre_optica());
         opticaExistente.setDireccion_optica(optica.getDireccion_optica());
 
-        iopticaServices.updateOptica(opticaExistente);
+        iopticaService.updateOptica(opticaExistente);
         return "redirect:/listarOpticas";
     }
 }

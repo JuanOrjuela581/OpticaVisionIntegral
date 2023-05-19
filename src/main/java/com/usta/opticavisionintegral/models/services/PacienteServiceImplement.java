@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.Entities.pacienteEntity;
+import com.usta.opticavisionintegral.entities.pacienteEntity;
 import com.usta.opticavisionintegral.models.dao.pacienteDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class PacienteServicesImplement implements IpacienteServices{
+public class PacienteServiceImplement implements IpacienteService {
 
     @Autowired
     private pacienteDAO pacienteDAO;

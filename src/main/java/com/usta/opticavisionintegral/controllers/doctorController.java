@@ -77,10 +77,10 @@ public class doctorController {
     public String actualizarDoctor(@PathVariable(value = "id") Long id, @ModelAttribute("doctoractualizar") doctorEntity doctor){
         doctorEntity doctorExistente = idoctorService.findOne(id);
         doctorExistente.setEstado(true);
-        doctorExistente.setNombre(doctor.getNombre());
-        doctorExistente.setApellido(doctor.getApellido());
-        doctorExistente.setEspecialidad(doctor.getEspecialidad());
-        doctorExistente.setAniosExp(doctor.getAniosExp());
+        doctorExistente.setNombre_doctor(doctor.getNombre_doctor());
+        doctorExistente.setApellido_doctor(doctor.getApellido_doctor());
+        doctorExistente.setEspecialidad_doctor(doctor.getEspecialidad_doctor());
+        doctorExistente.setAniosExp_doctor(doctor.getAniosExp_doctor());
 
 
         idoctorService.updateDoctor(doctorExistente);
