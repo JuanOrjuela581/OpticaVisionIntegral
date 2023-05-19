@@ -79,9 +79,9 @@ public class proveedorController {
     public String actualizarProveedor(@PathVariable(value = "id") Long id, @ModelAttribute("proveedoractualizar") proveedorEntity proveedor){
         proveedorEntity proveedorExistente = iproveedorService.findOne(id);
         proveedorExistente.setEstado(true);
-        proveedorExistente.setNombre(proveedor.getNombre());
-        proveedorExistente.setTelefono(proveedor.getTelefono());
-        proveedorExistente.setCorreo(proveedor.getCorreo());
+        proveedorExistente.setNombre_proveedor(proveedor.getNombre_proveedor());
+        proveedorExistente.setTelefono_proveedor(proveedor.getTelefono_proveedor());
+        proveedorExistente.setCorreo_proveedor(proveedor.getCorreo_proveedor());
 
         iproveedorService.updateEquipo(proveedorExistente);
         return "redirect:/listarProveedores";

@@ -1,7 +1,6 @@
 package com.usta.opticavisionintegral.controllers;
 
 import com.usta.opticavisionintegral.entities.productoEntity;
-import com.usta.opticavisionintegral.models.services.IopticaService;
 import com.usta.opticavisionintegral.models.services.IproductoService;
 import com.usta.opticavisionintegral.models.services.IproveedorService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -82,11 +81,11 @@ public class productoController {
         public String actualizarProducto(@PathVariable(value = "id") Long id, @ModelAttribute("productoactualizar") productoEntity producto){
             productoEntity productoExistente = iproductoService.findOne(id);
             productoExistente.setEstado(true);
-            productoExistente.setCodigo(producto.getCodigo());
-            productoExistente.setNombre(producto.getNombre());
-            productoExistente.setDescripcion(producto.getDescripcion());
-            productoExistente.setPrecio(producto.getPrecio());
-            productoExistente.setIdproveedor(producto.getIdproveedor());
+            productoExistente.setCodigo_producto(producto.getCodigo_producto());
+            productoExistente.setNombre_producto(producto.getNombre_producto());
+            productoExistente.setDescripcion_producto(producto.getDescripcion_producto());
+            productoExistente.setPrecio_producto(producto.getPrecio_producto());
+            productoExistente.setIdproveedor_producto(producto.getIdproveedor_producto());
 
             iproductoService.updateProducto(productoExistente);
             return "redirect:/listarProductos";

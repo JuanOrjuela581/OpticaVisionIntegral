@@ -1,5 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
+import com.usta.opticavisionintegral.entities.citaEntity;
 import com.usta.opticavisionintegral.entities.doctorEntity;
 import com.usta.opticavisionintegral.models.dao.doctorDAO;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,6 +52,11 @@ public class DoctorServiceImplement implements IdoctorService{
     @Transactional(readOnly = true)
     public doctorEntity findOne(Long id){
         return doctorDAO.findById(id).orElse(null);
+    }
+
+    @Transactional(readOnly = true)
+    public List<doctorEntity> selectOneDoc(){
+        return doctorDAO.selectOneDoc();
     }
 
 
