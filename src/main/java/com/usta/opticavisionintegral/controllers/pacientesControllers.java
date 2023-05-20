@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.controllers;
 
-import com.usta.opticavisionintegral.entities.pacienteEntity;
+import com.usta.opticavisionintegral.Entities.pacienteEntity;
 import com.usta.opticavisionintegral.models.services.IciudadService;
 import com.usta.opticavisionintegral.models.services.IopticaService;
 import com.usta.opticavisionintegral.models.services.IpacienteService;

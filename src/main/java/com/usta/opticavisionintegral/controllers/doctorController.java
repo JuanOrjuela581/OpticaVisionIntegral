@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.controllers;
 
-import com.usta.opticavisionintegral.entities.doctorEntity;
+import com.usta.opticavisionintegral.Entities.doctorEntity;
 import com.usta.opticavisionintegral.models.services.IdoctorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

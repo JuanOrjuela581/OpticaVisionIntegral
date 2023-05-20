@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.entities.proveedorEntity;
+import com.usta.opticavisionintegral.Entities.proveedorEntity;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.entities.pacienteEntity;
+import com.usta.opticavisionintegral.Entities.pacienteEntity;
 
 import java.util.List;
 
@@ -17,4 +17,6 @@ public interface IpacienteService {
     public void changeState(Long id);
 
     public pacienteEntity findOne(Long id);
+
+    public List<pacienteEntity> selectOnepac();
 }

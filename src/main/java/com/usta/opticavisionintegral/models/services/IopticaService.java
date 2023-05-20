@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.services;
 
-import com.usta.opticavisionintegral.entities.opticaEntity;
+import com.usta.opticavisionintegral.Entities.opticaEntity;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.controllers;
 
-import com.usta.opticavisionintegral.entities.proveedorEntity;
+import com.usta.opticavisionintegral.Entities.proveedorEntity;
 import com.usta.opticavisionintegral.models.services.IproveedorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
