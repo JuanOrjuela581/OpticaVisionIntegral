@@ -1,4 +1,4 @@
-package com.usta.opticavisionintegral.entities;
+package com.usta.opticavisionintegral.Entities;
 
 import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -44,8 +44,8 @@ public class citaEntity implements Serializable{
     private Boolean estado;
 
     @OneToOne
-    @JoinColumn(name = "idPaciente")
-    private pacienteEntity idPaciente;
+    @JoinColumn(name = "id_paciente")
+    private pacienteEntity id_paciente;
 
     @OneToOne
     @JoinColumn(name = "id_doctor")
@@ -100,11 +100,11 @@ public class citaEntity implements Serializable{
     }
 
     public pacienteEntity getIdPaciente() {
-        return idPaciente;
+        return id_paciente;
     }
 
     public void setIdPaciente(pacienteEntity idPaciente) {
-        this.idPaciente = idPaciente;
+        this.id_paciente = idPaciente;
     }
 
     public doctorEntity getId_doctor() {

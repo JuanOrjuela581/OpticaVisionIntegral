@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.models.dao;
 
-import com.usta.opticavisionintegral.entities.citaEntity;
+import com.usta.opticavisionintegral.Entities.citaEntity;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.controllers;
 
-import com.usta.opticavisionintegral.entities.ciudadEntity;
+import com.usta.opticavisionintegral.Entities.ciudadEntity;
 import com.usta.opticavisionintegral.models.services.IciudadService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

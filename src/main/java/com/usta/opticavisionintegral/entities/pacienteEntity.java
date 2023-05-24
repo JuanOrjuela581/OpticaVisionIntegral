@@ -1,4 +1,4 @@
-package com.usta.opticavisionintegral.entities;
+package com.usta.opticavisionintegral.Entities;
 
 import jakarta.persistence.*;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -36,7 +36,7 @@ public class pacienteEntity implements Serializable {
     private String apellido_paciente;
 
     @NotNull
-    @Column(name = "fechaNacimiento_paciente")
+    @Column(name = "fechanacimiento_paciente")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     private Date fechaNacimiento_paciente;
@@ -62,6 +62,10 @@ public class pacienteEntity implements Serializable {
     @JoinColumn(name = "id_ciudad", referencedColumnName = "id_ciudad")
     @ManyToOne(fetch = FetchType.LAZY)
     private ciudadEntity id_ciudad;
+
+
+
+
 
     public Long getId_paciente() {
         return id_paciente;

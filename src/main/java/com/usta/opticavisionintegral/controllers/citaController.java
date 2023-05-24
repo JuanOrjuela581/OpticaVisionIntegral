@@ -1,6 +1,6 @@
 package com.usta.opticavisionintegral.controllers;
 
-import com.usta.opticavisionintegral.entities.citaEntity;
+import com.usta.opticavisionintegral.Entities.citaEntity;
 import com.usta.opticavisionintegral.models.services.IcitaService;
 import com.usta.opticavisionintegral.models.services.IdoctorService;
 import com.usta.opticavisionintegral.models.services.IopticaService;
@@ -37,7 +37,7 @@ public class citaController {
     public String formularioCrearCita(Model model){
         model.addAttribute("cita", new citaEntity());
         model.addAttribute("titulo","Crear Cita");
-        model.addAttribute("pac", IpacienteService.selectOneOpt());
+        model.addAttribute("pac", ipacienteService.selectOnepac());
         model.addAttribute("doc", idoctorService.selectOneDoc());
         return "crearCita";
     }
@@ -79,7 +79,7 @@ public class citaController {
     public String mostrarFormularioEditarCita(@PathVariable(value = "id") Long id, Model model) {
         model.addAttribute("titulo", "Editar Cita");
         model.addAttribute("citaactualizar", icitaService.findOne(id));
-        model.addAttribute("pac", IpacienteService.selectOneOpt());
+        model.addAttribute("pac", ipacienteService.selectOnepac());
         model.addAttribute("doc", idoctorService.selectOneDoc());
         return "editarCita";
     }
