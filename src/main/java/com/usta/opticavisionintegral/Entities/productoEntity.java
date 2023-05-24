@@ -34,15 +34,15 @@ import java.io.Serializable;
 
         @NotNull
         @Column(name = "precio_producto")
-        private Float precio_producto;
+        private Integer precio_producto;
 
         @NotNull
         @Column(name = "existencias_producto")
-        private Boolean existencias_producto;
+        private Integer existencias_producto;
 
         @OneToOne
-        @JoinColumn(name = "idproveedor_producto")
-        private proveedorEntity idproveedor_producto;
+        @JoinColumn(name = "id_proveedor")
+        private proveedorEntity id_proveedor;
 
         @NotNull
         @Column(name = "estado")
@@ -80,28 +80,28 @@ import java.io.Serializable;
             this.descripcion_producto = descripcion;
         }
 
-        public Float getPrecio_producto() {
+        public Integer getPrecio_producto() {
             return precio_producto;
         }
 
-        public void setPrecio_producto(Float precio) {
+        public void setPrecio_producto(Integer precio) {
             this.precio_producto = precio;
         }
 
-        public Boolean getExistencias_producto() {
+        public Integer getExistencias_producto() {
             return existencias_producto;
         }
 
-        public void setExistencias_producto(Boolean existencias) {
+        public void setExistencias_producto(Integer existencias) {
             this.existencias_producto = existencias;
         }
 
         public proveedorEntity getIdproveedor_producto() {
-            return idproveedor_producto;
+            return id_proveedor;
         }
 
         public void setIdproveedor_producto(proveedorEntity idproveedor) {
-            this.idproveedor_producto = idproveedor;
+            this.id_proveedor = idproveedor;
         }
 
         public Boolean getEstado() {
