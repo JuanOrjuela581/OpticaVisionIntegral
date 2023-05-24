@@ -50,4 +50,9 @@ public class PacienteServiceImplement implements IpacienteService {
         return pacienteDAO.findById(id).orElse(null);
     }
 
+    @Transactional(readOnly = true)
+    public List<pacienteEntity> selectOnePac(){
+        return (List<pacienteEntity>) pacienteDAO.selectOnePac();
+    }
+
 }

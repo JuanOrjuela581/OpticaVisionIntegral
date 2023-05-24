@@ -33,7 +33,7 @@ public class productoController {
             model.addAttribute("producto", new productoEntity());
             model.addAttribute("titulo","Crear Producto");
            // model.addAttribute("opti", IopticaService.selectOneUni());
-            return "crearOptica";
+            return "crearProducto";
         }
         @PostMapping(value = "crearDirector")
         public String guardarProducto(@Valid productoEntity producto, BindingResult result, SessionStatus status){

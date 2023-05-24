@@ -39,7 +39,7 @@ public class pacienteEntity implements Serializable {
     @Column(name = "fechanacimiento_paciente")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
-    private Date fechaNacimiento_paciente;
+    private Date fechanacimiento_paciente;
 
     @NotNull
     @Size(min = 1,max = 100)
@@ -100,11 +100,11 @@ public class pacienteEntity implements Serializable {
     }
 
     public Date getFechaNacimiento_paciente() {
-        return fechaNacimiento_paciente;
+        return fechanacimiento_paciente;
     }
 
     public void setFechaNacimiento_paciente(Date fechaNacimiento_paciente) {
-        this.fechaNacimiento_paciente = fechaNacimiento_paciente;
+        this.fechanacimiento_paciente = fechaNacimiento_paciente;
     }
 
     public String getDireccion_paciente() {

@@ -34,8 +34,8 @@ public class doctorEntity implements  Serializable {
 
     @NotNull
     @Size(min = 1, max = 10)
-    @Column(name = "aniosExp_doctor")
-    private String aniosExp_doctor;
+    @Column(name = "aniosexperiencia_doctor")
+    private String aniosexperiencia_doctor;
 
     @NotNull
     @Column(name = "estado")
@@ -77,11 +77,11 @@ public class doctorEntity implements  Serializable {
     }
 
     public String getAniosExp_doctor() {
-        return aniosExp_doctor;
+        return aniosexperiencia_doctor;
     }
 
     public void setAniosExp_doctor(String aniosExp) {
-        this.aniosExp_doctor = aniosExp;
+        this.aniosexperiencia_doctor = aniosExp;
     }
 
     public Boolean getEstado() {
@@ -90,6 +90,22 @@ public class doctorEntity implements  Serializable {
 
     public void setEstado(Boolean estado) {
         this.estado = estado;
+    }
+
+    public String getAniosexperiencia_doctor() {
+        return aniosexperiencia_doctor;
+    }
+
+    public void setAniosexperiencia_doctor(String aniosexperiencia_doctor) {
+        this.aniosexperiencia_doctor = aniosexperiencia_doctor;
+    }
+
+    public citaEntity getId_cita() {
+        return id_cita;
+    }
+
+    public void setId_cita(citaEntity id_cita) {
+        this.id_cita = id_cita;
     }
 }
 

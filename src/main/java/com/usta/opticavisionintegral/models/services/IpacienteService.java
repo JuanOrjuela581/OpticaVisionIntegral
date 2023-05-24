@@ -18,5 +18,5 @@ public interface IpacienteService {
 
     public pacienteEntity findOne(Long id);
 
-    public List<pacienteEntity> selectOnepac();
+    public List<pacienteEntity> selectOnePac();
 }

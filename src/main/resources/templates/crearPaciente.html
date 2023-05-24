@@ -61,6 +61,18 @@
                 </output>
             </div>
 
+
+            <div class="form-group">
+                <output class="Optica">
+                    <label for="idoptica"></label>
+                    <select id="idoptica" class="form-control" th:field="*{id_optica}" name="idoptica" >
+                        <option th:each="optica:${opticas}" th:value="${optica.id_optica}" th:text="${optica.nombre_optica}" th:if="${optica.estado}==true">
+
+                        </option>
+                    </select>
+                </output>
+            </div>
+
             <a th:href="@{/listarPacientes}">Listar Pacientes</a>
 
             <div class="form-group">

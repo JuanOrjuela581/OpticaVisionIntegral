@@ -2,8 +2,6 @@ create table opticas(
     id_optica SERIAL NOT NULL,
     nombre_optica VARCHAR(25) NOT NULL,
     direccion_optica VARCHAR(50) NOT NULL,
-    id_usuario INT4 NOT NULL,
-    id_paciente INT4 NOT NULL,
     PRIMARY KEY(id_optica)
 )
 ALTER TABLE opticas OWNER TO user_java;
@@ -17,6 +15,7 @@ create table pacientes(
     direccion_paciente VARCHAR(100) NOT NULL,
     correo_paciente VARCHAR(50) NOT NULL,
     id_ciudad INT4 NOT NULL,
+    id_optica INT4 NOT NULL,
     PRIMARY KEY(id_paciente)
 )
 ALTER TABLE pacientes OWNER TO user_java;
@@ -46,6 +45,7 @@ create table usuarios(
     id_usuario SERIAL NOT NULL,
     nombre_usuario VARCHAR(50)  NOT NULL,
     contrasenia_usuario VARCHAR(25) NOT NULL,
+    id_optica INT4 NOT NULL,
     PRIMARY KEY(id_usuario)
 )
 
@@ -103,11 +103,11 @@ FOREIGN KEY (id_proveedor) REFERENCES proveedores(id_proveedor) ON DELETE CASCAD
 ALTER TABLE proveedores_opticas ADD CONSTRAINT proveedores_opticas_opticas_FK
 FOREIGN KEY (id_optica) REFERENCES opticas(id_optica)ON DELETE CASCADE;
 
-ALTER TABLE opticas ADD CONSTRAINT opticas_usuarios_FK
-FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario) ON DELETE CASCADE;
+ALTER TABLE usuarios ADD CONSTRAINT usuarios_opticas_FK
+FOREIGN KEY (id_optica) REFERENCES opticas(id_optica) ON DELETE CASCADE;
 
-ALTER TABLE opticas ADD CONSTRAINT opticas_pacientes_FK
-FOREIGN KEY (id_paciente) REFERENCES pacientes(id_paciente) ON DELETE CASCADE;
+ALTER TABLE pacientes ADD CONSTRAINT pacientes_opticas_FK
+FOREIGN KEY (id_optica) REFERENCES opticas(id_optica) ON DELETE CASCADE;
 
 ALTER TABLE pacientes ADD CONSTRAINT pacientes_ciudades_FK
 FOREIGN KEY (id_ciudad) REFERENCES ciudades(id_ciudad) ON DELETE CASCADE;

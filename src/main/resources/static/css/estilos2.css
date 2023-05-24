@@ -243,7 +243,29 @@
     align-items: center;
 
     color: #2D2D2D;
-}
+}.Optica {
+
+     position: absolute;
+     left: 32.42%;
+     right: 61.83%;
+     top: 266px;
+     bottom: 52.29%;
+
+     /* P3 */
+
+     font-family: 'Poppins';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 12.8px;
+     line-height: 150%;
+     /* or 19px */
+     height: 25px;
+     width: 223px;
+     display: flex;
+     align-items: center;
+
+     color: #2D2D2D;
+ }
 
 .btn_btn-primary {
     position: absolute;
