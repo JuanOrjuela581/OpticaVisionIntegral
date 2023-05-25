@@ -20,7 +20,7 @@ import java.io.Serializable;
         @NotNull
         @Size(min = 1, max = 20)
         @Column(name = "codigo_producto")
-        private String codigo_producto;
+        private Integer codigo_producto;
 
         @NotNull
         @Size(min = 1, max = 50)
@@ -56,11 +56,11 @@ import java.io.Serializable;
             this.id_producto = idproducto;
         }
 
-        public String getCodigo_producto() {
+        public Integer getCodigo_producto() {
             return codigo_producto;
         }
 
-        public void setCodigo_producto(String codigo) {
+        public void setCodigo_producto(Integer codigo) {
             this.codigo_producto = codigo;
         }
 
@@ -96,12 +96,12 @@ import java.io.Serializable;
             this.existencias_producto = existencias;
         }
 
-        public proveedorEntity getIdproveedor_producto() {
+        public proveedorEntity getId_proveedor() {
             return id_proveedor;
         }
 
-        public void setIdproveedor_producto(proveedorEntity idproveedor) {
-            this.id_proveedor = idproveedor;
+        public void setId_proveedor(proveedorEntity id_proveedor) {
+            this.id_proveedor = id_proveedor;
         }
 
         public Boolean getEstado() {
