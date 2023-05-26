@@ -30,7 +30,7 @@
             <td th:text="${producto.existencias_producto}"></td>
             <td th:text="${producto.id_proveedor.nombre_proveedor}"></td>
             <td> <a th:href="@{/eliminarProducto/} + ${producto.id_producto}" class="btn btn-danger btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el registro?')"></a></td>
-            <td> <a th:href="@{/cambiarEstadoProducto/} + ${producto.id_producto}" class="btn btn-danger btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+            <td> <a th:href="@{/cambiarEstadoProducto/} + ${producto.id_producto}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
             <td> <a th:href="@{/editarProducto/{id} (id=${producto.id_producto})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
         </tr>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head th:replace="layout/layout :: head"></head>
+
+
+<body>
+
+<nav th:replace="layout/layout :: navbarCRUD"></nav>
+<div class="contenido-opticita">
+  <div class="titulos-opticita">
+    <h2 class="TITULO_OPTICITA">Registra Tu Proveedor Ahora</h2>
+    <p class="crea-cuenta">Manten bajo control el registro de tus proveedores.</p>
+  </div>
+
+  <div class="container-formulario">
+    <form th:object="${proveedoractualizar}" th:action="@{/editarProveedor/{id} (id=${proveedoractualizar.id_proveedor})}" method="post">
+      <div class="form-group">
+        <label for="nombre" class="control-label"></label>
+        <input id="nombre" type="text" class="Nombre" th:field="*{nombre_proveedor}" name="nombre" placeholder="Nombre" required="true"/>
+        <small></small>
+      </div>
+
+      <div class="form-group">
+        <label for="telefono" class="control-label"></label>
+        <input id="telefono" type="text" class="Apellido" th:field="*{telefono_proveedor}" name="telefono" placeholder="Telefono" required="true"/>
+        <small></small>
+      </div>
+
+      <div class="form-group">
+        <label for="correo" class="control-label"></label>
+        <input id="correo" type="text" class="E-mail" th:field="*{correo_proveedor}" name="correo" placeholder="Correo" required="true"/>
+        <small></small>
+      </div>
+
+      <a th:href="@{/listarProveedores}">Listar Proveedores</a>
+
+      <div class="form-group">
+        <div class="form-label">
+          <input type="submit" value="Guardar" class="btn btn-success" />
+        </div>
+      </div>
+
+    </form>
+
+    <div class="formulario-fondo">
+      <h3 class="titulo-fondo">Informacion de Contacto</h3>
+      <p class="parrafo-fondo">Llama o envia un correo y nuestro equipo te contactara en menos de 24 horas!</p>
+      <span class="celular-fondo">+880 163 675 6208</span>
+      <span class="correo-fondo">contact@debuggersstudio.com</span>
+      <span class="direccion-fondo">C.c. Unicentro L-1040 Remansos De Sta Inés</span>
+      <img class="imagen-formulario" th:src="@{/images/imagen-logo5.png}" alt="logo" width="127px" height="91px">
+
+    </div>
+
+  </div>
+
+</div>
+<footer class="footer3" >
+  <div th:replace="layout/layout :: footer"></div>
+</footer>
+
+</body>
+</html>

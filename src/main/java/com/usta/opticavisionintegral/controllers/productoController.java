@@ -73,7 +73,7 @@ public class productoController {
         public String mostrarFormularioEditarProducto(@PathVariable(value = "id") Long id, Model model) {
             model.addAttribute("titulo", "Editar Producto");
             model.addAttribute("productoactualizar", iproductoService.findOne(id));
-           // model.addAttribute("opt", iproveedorService.selectOneProv());
+            model.addAttribute("proveedor", iproveedorService.findAll());
             return "editarProducto";
         }
 

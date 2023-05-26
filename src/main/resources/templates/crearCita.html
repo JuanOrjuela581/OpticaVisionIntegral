@@ -8,53 +8,41 @@
 <nav th:replace="layout/layout :: navbarCRUD"></nav>
 <div class="contenido-opticita">
     <div class="titulos-opticita">
-        <h2 class="TITULO_OPTICITA">Agenda Tu Opticita Ahora</h2>
-        <p class="crea-cuenta">Primero crea una cuenta para conocer los horarios disponibles</p>
+        <h2 class="TITULO_OPTICITA">Registra Tu Opticita Ahora</h2>
+        <p class="crea-cuenta">Agenda tu cita en el dia de tu preferencia</p>
     </div>
 
     <div class="container-formulario">
-        <form th:object="${paciente}" th:action="@{crearPaciente}" method="post">
+        <form th:object="${cita}" th:action="@{crearCita}" method="post">
             <div class="form-group">
                 <label for="nombres" class="control-label"></label>
-                <input id="nombres" type="text" class="Nombre" th:field="*{nombres_paciente}" name="nombres" placeholder="Nombres" required="true"/>
+                <input id="nombres" type="date" class="Nombre" th:field="*{fecha_cita}" name="nombres" placeholder="Nombres" required="true"/>
                 <small></small>
             </div>
 
             <div class="form-group">
                 <label for="apellidos" class="control-label"></label>
-                <input id="apellidos" type="text" class="Apellido" th:field="*{apellido_paciente}" name="apellido" placeholder="Apellido" required="true"/>
+                <input id="apellidos" type="text" class="Apellido" th:field="*{precio_cita}" name="apellido" placeholder="Apellido" required="true"/>
                 <small></small>
             </div>
 
             <div class="form-group">
                 <label for="correo" class="control-label"></label>
-                <input id="correo" type="text" class="E-mail" th:field="*{correo_paciente}" name="correo" placeholder="Correo" required="true"/>
+                <input id="correo" type="text" class="E-mail" th:field="*{eps_cita}" name="correo" placeholder="Correo" required="true"/>
                 <small></small>
             </div>
 
             <div class="form-group">
                 <label for="direccion" class="control-label"></label>
-                <input id="direccion" type="text" class="Direccion" th:field="*{direccion_paciente}" name="correo" placeholder="Direccion" required="true"/>
-                <small></small>
-            </div>
-
-            <div class="form-group">
-                <label for="documento" class="control-label"></label>
-                <input id="documento" type="text" class="Numerodedocumento" th:field="*{identificacion_paciente}" name="documento" placeholder="N° Documento" required="true"/>
-                <small></small>
-            </div>
-
-            <div class="form-group">
-                <label for="fechaNacimiento" class="control-label"></label>
-                <input id="fechaNacimiento" type="date" class="Fechadenacimiento" th:field="*{fechaNacimiento_paciente}" name="fechaNacimiento" placeholder="" required="true"/>
+                <input id="direccion" type="text" class="Direccion" th:field="*{motivo_cita}" name="correo" placeholder="Direccion" required="true"/>
                 <small></small>
             </div>
 
             <div class="form-group">
                 <output class="Pais">
-                    <label for="idciudad"></label>
-                    <select id="idciudad" class="form-control" th:field="*{id_ciudad}" name="idciudad" >
-                        <option th:each="ciudad:${ciudad}" th:value="${ciudad.id_ciudad}" th:text="${ciudad.nombre_ciudad}" th:if="${ciudad.estado}==true">
+                    <label for="idpaciente"></label>
+                    <select id="idpaciente" class="form-control" th:field="*{idPaciente}" name="idpaciente" >
+                        <option th:each="paciente:${pac}" th:value="${paciente.id_paciente}" th:text="${paciente.nombres_paciente}" th:if="${paciente.estado}==true">
 
                         </option>
                     </select>
@@ -64,16 +52,16 @@
 
             <div class="form-group">
                 <output class="Optica">
-                    <label for="idoptica"></label>
-                    <select id="idoptica" class="form-control" th:field="*{id_optica}" name="idoptica" >
-                        <option th:each="optica:${opticas}" th:value="${optica.id_optica}" th:text="${optica.nombre_optica}" th:if="${optica.estado}==true">
+                    <label for="iddoctor"></label>
+                    <select id="iddoctor" class="form-control" th:field="*{id_doctor}" name="iddoctor" >
+                        <option th:each="doc:${doc}" th:value="${doc.id_doctor}" th:text="${doc.nombre_doctor}" th:if="${doc.estado}==true">
 
                         </option>
                     </select>
                 </output>
             </div>
 
-            <a th:href="@{/listarPacientes}">Listar Pacientes</a>
+            <a th:href="@{/listarCitas.html}">Listar Citas</a>
 
             <div class="form-group">
                 <div class="form-label">
