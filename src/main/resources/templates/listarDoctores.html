@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head th:replace="layout/layout :: head"></head>
+
+<body>
+<nav th:replace="layout/layout :: navbarCRUD"></nav>
+
+<br/>
+<h1 class="page-content" th:text="${titulo}"></h1>
+<div class="container">
+  <table id="example" class="table table-striped-columns">
+    <thead class="table-info">
+    <tr>
+      <th>Id</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Especialidad</th>
+      <th>Años experiencia</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="doctor: ${doctor}" th:if="${doctor.estado} == true">
+
+      <td th:text="${doctor.id_doctor}"></td>
+      <td th:text="${doctor.nombre_doctor}"></td>
+      <td th:text="${doctor.apellido_doctor}"></td>
+      <td th:text="${doctor.especialidad_doctor}"></td>
+      <td th:text="${doctor.aniosexperiencia_doctor}"></td>
+      <td> <a th:href="@{/cambiarEstadoDoctor/} + ${doctor.id_doctor}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+      <td> <a th:href="@{/editarDoctor/{id} (id=${doctor.id_doctor})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
+
+
+
+
+    </tr>
+    </tbody>
+  </table>
+  <a th:href="@{/crearDoctor}" class="btn btn-primary">Registrar Doctor</a>
+</div>
+
+
+
+<footer class="footer3" >
+  <div th:replace="layout/layout :: footer"></div>
+</footer>
+</body>
+</html>
