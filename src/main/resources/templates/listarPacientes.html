@@ -22,6 +22,8 @@
             <th>correo</th>
             <th>Ciudad</th>
             <th>Optica</th>
+            <th></th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -36,6 +38,8 @@
             <td th:text="${paciente.correo_paciente}"></td>
             <td th:text="${paciente.id_ciudad.nombre_ciudad}"></td>
             <td th:text="${paciente.id_optica.nombre_optica}"></td>
+            <td> <a th:href="@{/cambiarEstadoPaciente/} + ${paciente.id_paciente}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+            <td> <a th:href="@{/editarPaciente/{id} (id=${paciente.id_paciente})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
 
         </tr>
