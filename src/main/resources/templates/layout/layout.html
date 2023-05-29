@@ -34,8 +34,47 @@
 </nav>
 <!--Fin Navbar-->
 
+<!--Footer del index-->
+<footer th:fragment="footerIndex">
+    <div class="enlaces">
+        <h3 class="enlaces-titulo">Compañia</h3>
+        <ul>
+            <li><a th:href="@{/Index}">Inicio</a> </li>
+            <li><a th:href="@{/AboutUs}">Acerca de Nosotros</a> </li>
+            <li><a th:href="@{/crearPaciente}">Opticitas</a></li>
+            <li><a th:href="@{/Servicios}">Servicios</a></li>
+            <li><a th:href="@{/Sedes}">Sedes</a></li>
+            <li><a th:href="@{/AtencionUsuario}">Atencion al usuario</a></li>
+        </ul>
+    </div>
+
+    <div class="iconos-container">
+        <h3 class="iconos-titulo">Siguenos</h3>
+        <br>
+        <a href="https://www.facebook.com" class="icono" target="blank"> <img th:src="@{/images/facebook.png}"  alt="logo" width="50" height="50px"></a>
+        <a href="https://www.instagram.com" class="icono" target="blank"> <img th:src="@{/images/instagram.png}"  alt="logo" width="50" height="50px"></a>
+    </div>
+
+    <div class="info-container">
+        <img th:src="@{/images/logo-footer.png}" width="244px" height="198px" class="logo-footer-footer2">
+        <span>C.c. Unicentro L-1040 Remansos De Sta Inés</span>
+        <br>
+        <br>
+        <span>© Optica visión SAS 2022.</span>
+
+
+
+    </div>
+
+    <div class="contactenos">
+        <h3 class="iconos-titulo">Contactanos</h3>
+        <span class="contacto">opticavisionintegral@siau.com</span>
+    </div>
+</footer>
+<!--fin Footer index-->
+
 <!--Inicio Footer-->
-<footer th:fragment="footer">
+<footer th:fragment="footerVistas">
     <div class="enlaces-footer2">
         <h3 class="enlaces-titulo-footer2">Compañia</h3>
         <ul>
@@ -81,6 +120,7 @@
     </script>
 </footer>
 <!--Fin Footer-->
+
 
 
 <!--Navbar del CRUD-->

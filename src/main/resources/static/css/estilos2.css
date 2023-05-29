@@ -270,12 +270,13 @@
      color: #2D2D2D;
  }
 
-.btn_btn-primary {
+.btn-guardar {
+    color: white;
     position: absolute;
     width: 166px;
-    left: calc(50% - 166px/2 - 435px);
-    top: 68.5%;
-    bottom: 25.79%;
+    left: 100px;
+    top: 58.5%;
+    bottom: 35.79%;
 
     background: #CF1B87;
     /* Border/border-white */
@@ -1527,4 +1528,38 @@ top: 393px;
     border: 0.998336px solid #FFFFFF;
     box-shadow: 0px 3.99334px 3.99334px rgba(43, 37, 37, 0.12);
     border-radius: 3.99334px;
+}
+
+/*Estilos de los listar de crud*/
+.titulos-tablas-crud{
+    position: absolute;
+    left: 24.25%;
+    right: 26.55%;
+    top: 130px;
+    bottom: 92.56%;
+
+    /* H1 */
+
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 61.04px;
+    line-height: 120%;
+    /* or 73px */
+
+    text-align: center;
+    letter-spacing: -0.498531px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #2C2762;
+}
+
+.container-tabla{
+    position: absolute;
+    left: 43px;
+    right: 43px;
+    top: 260px;
+    bottom:600px;
+
 }

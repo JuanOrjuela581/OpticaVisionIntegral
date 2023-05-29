@@ -7,8 +7,9 @@
 <nav th:replace="layout/layout :: navbarCRUD"></nav>
 
 <br/>
-<h1 class="page-content" th:text="${titulo}"></h1>
-<div class="container">
+<h1 class="titulos-tablas-crud" th:text="${titulo}"></h1>
+<br/>
+<div class="container-tabla">
     <table id="example" class="table table-striped-columns">
         <thead class="table-info">
         <tr>
@@ -45,8 +46,8 @@
 
 
 
-<footer class="footer3" >
-    <div th:replace="layout/layout :: footer"></div>
+<footer class="footer-crud" >
+    <div th:replace="layout/layout :: footerVistas"></div>
 </footer>
 </body>
 </html>

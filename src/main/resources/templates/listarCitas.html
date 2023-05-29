@@ -7,8 +7,9 @@
 <body>
 <nav th:replace="layout/layout :: navbarCRUD"></nav>
 
-<h1 class="page-content" th:text="${titulo}"></h1>
-<div class="container">
+<h1 class="titulos-tablas-crud" th:text="${titulo}"></h1>
+<br/>
+<div class="container-tabla">
   <table id="example" class="table table-striped-columns">
     <thead class="table-info">
     <tr>
@@ -20,6 +21,8 @@
       <th>Motivo</th>
       <th>Paciente</th>
       <th>Doctor</th>
+      <th></th>
+      <th></th>
 
 
     </tr>
@@ -34,7 +37,7 @@
       <td th:text="${cita.motivo_cita}"></td>
       <td th:text="${cita.idPaciente.nombres_paciente}"></td>
       <td th:text="${cita.id_doctor.nombre_doctor}"></td>
-      <td> <a th:href="@{/eliminarCita/} + ${cita.id_cita}" class="btn btn-danger btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el registro?')"></a></td>
+      <!--<td> <a th:href="@{/eliminarCita/} + ${cita.id_cita}" class="btn btn-danger btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el registro?')"></a></td>-->
       <td> <a th:href="@{/cambiarEstadoCita/} + ${cita.id_cita}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
       <td> <a th:href="@{/editarCita.html/{id} (id=${cita.id_cita})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
@@ -44,8 +47,8 @@
   <a th:href="@{/crearCita}" class="btn btn-primary">Registrar Cita</a>
 </div>
 
-<footer class="footer3" >
-  <div th:replace="layout/layout :: footer"></div>
+<footer class="footer-crud" >
+  <div th:replace="layout/layout :: footerVistas"></div>
 </footer>
 
 </body>
