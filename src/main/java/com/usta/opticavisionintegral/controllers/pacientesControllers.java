@@ -37,8 +37,8 @@ public class pacientesControllers {
     public String formularioCrearPaciente(Model model){
         model.addAttribute("paciente", new pacienteEntity());
         model.addAttribute("titulo", "Crear Paciente");
-        model.addAttribute("optica", iopticaService.finAll());
         model.addAttribute("ciudad", iciudadService.finAll());
+        model.addAttribute("optica", iopticaService.finAll());
         return "crearPaciente";
     }
     @PostMapping(value = "crearPaciente")
@@ -46,6 +46,7 @@ public class pacientesControllers {
         if (result.hasErrors()){
             return "crearPaciente";
         }
+        paciente.setEstado(true);
         ipacienteService.save(paciente);
         status.setComplete();
         return "redirect:/listarPacientes";
@@ -82,6 +83,7 @@ public class pacientesControllers {
     @PostMapping("editarPaciente/{id}")
     public String actualizarSeccional(@PathVariable(value = "id") Long id, @ModelAttribute("pacienteActualizar") pacienteEntity paciente){
         pacienteEntity pacienteExistente = ipacienteService.findOne(id);
+        pacienteExistente.setEstado(true);
         pacienteExistente.setIdentificacion_paciente(paciente.getIdentificacion_paciente());
         pacienteExistente.setNombres_paciente(paciente.getNombres_paciente());
         pacienteExistente.setApellido_paciente(paciente.getApellido_paciente());

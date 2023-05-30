@@ -13,7 +13,7 @@ import java.util.Date;
 @Table(name = "pacientes")
 public class pacienteEntity implements Serializable {
 
-    private static final long serialVersionUIO = 1l;
+    private static final long serialVersionUIO = 1;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

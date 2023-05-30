@@ -51,10 +51,10 @@
             </div>
 
             <div class="form-group">
-                <output class="Optica">
-                    <label for="idoptica"></label>
-                    <select id="idoptica" class="form-control" th:field="*{id_optica}" name="idoptica" >
-                        <option th:each="optica:${optica}" th:value="${optica}" th:text="${optica}" th:if="${optica.estado}==true">
+                <output class="Pais">
+                    <label for="idciudad"></label>
+                    <select id="idciudad" class="form-control" th:field="*{id_ciudad}" name="idciudad" >
+                        <option th:each="ciudad:${ciudad}" th:value="${ciudad.id_ciudad}" th:text="${ciudad.nombre_ciudad}" th:if="${ciudad.estado}==true">
 
                         </option>
                     </select>
@@ -62,10 +62,10 @@
             </div>
 
             <div class="form-group">
-                <output class="Pais">
-                    <label for="idciudad"></label>
-                    <select id="idciudad" class="form-control" th:field="*{id_ciudad}" name="idciudad" >
-                        <option th:each="ciudad:${ciudad}" th:value="${ciudad}" th:text="${ciudad}" th:if="${ciudad.estado}==true">
+                <output class="Optica">
+                    <label for="idoptica"></label>
+                    <select id="idoptica" class="form-control" th:field="*{id_optica}" name="idoptica" >
+                        <option th:each="optica:${optica}" th:value="${optica.id_optica}" th:text="${optica.nombre_optica}" th:if="${optica.estado}==true">
 
                         </option>
                     </select>
