@@ -27,7 +27,7 @@ public class doctorController {
     public String crearDoctor(Model model) {
         model.addAttribute("titulo", "Crear Doctor");
         model.addAttribute("doctor", new doctorEntity());
-        return "crearEquipo";
+        return "crearDoctor";
     }
 
     @PostMapping(value = "crearDoctor")
@@ -48,7 +48,7 @@ public class doctorController {
         if (id > 0) {
             idoctorService.remove(id);
         } else {
-            return "error500";
+            return "error";
         }
 
         return "redirect:/listarDoctores";
@@ -80,7 +80,7 @@ public class doctorController {
         doctorExistente.setNombre_doctor(doctor.getNombre_doctor());
         doctorExistente.setApellido_doctor(doctor.getApellido_doctor());
         doctorExistente.setEspecialidad_doctor(doctor.getEspecialidad_doctor());
-        doctorExistente.setAniosExp_doctor(doctor.getAniosExp_doctor());
+        doctorExistente.setaniosexperiencia_doctor(doctor.getaniosexperiencia_doctor());
 
 
         idoctorService.updateDoctor(doctorExistente);

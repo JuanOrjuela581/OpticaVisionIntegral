@@ -7,8 +7,9 @@
 <body>
 <nav th:replace="layout/layout :: navbarCRUD"></nav>
 
-<h1 class="page-content" th:text="${titulo}"></h1>
-<div class="container">
+<h1 class="titulos-tablas-crud" th:text="${titulo}"></h1>
+<br/>
+<div class="container-tabla">
   <table id="example" class="table table-striped-columns">
     <thead class="table-info">
     <tr>
@@ -17,6 +18,8 @@
       <th>Nombre </th>
       <th>Telefono</th>
       <th>Correo</th>
+      <th></th>
+      <th></th>
 
     </tr>
     </thead>
@@ -27,16 +30,18 @@
       <td th:text="${proveedor.nombre_proveedor}"></td>
       <td th:text="${proveedor.telefono_proveedor}"></td>
       <td th:text="${proveedor.correo_proveedor}"></td>
-
+      <!--<td> <a th:href="@{/eliminarProveedor/} + ${proveedor.id_proveedor}" class="btn btn-danger btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el registro?')"></a></td>-->
+      <td> <a th:href="@{/cambiarEstadoProveedor/} + ${proveedor.id_proveedor}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+      <td> <a th:href="@{/editarProveedor/{id} (id=${proveedor.id_proveedor})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
     </tr>
     </tbody>
   </table>
-  <a th:href="@{/crearProducto}" class="btn btn-primary">Registrar Proveedor</a>
+  <a th:href="@{/crearProveedor}" class="btn btn-primary">Registrar Proveedor</a>
 </div>
 
-<footer class="footer3" >
-  <div th:replace="layout/layout :: footer"></div>
+<footer class="footer-crud" >
+  <div th:replace="layout/layout :: footerVistas"></div>
 </footer>
 
 </body>

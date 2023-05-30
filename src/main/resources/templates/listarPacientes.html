@@ -7,8 +7,9 @@
 <nav th:replace="layout/layout :: navbarCRUD"></nav>
 
 <br/>
-<h1 class="page-content" th:text="${titulo}"></h1>
-<div class="container">
+<h1 class="titulos-tablas-crud" th:text="${titulo}"></h1>
+<br/>
+<div class="container-tabla">
     <table id="example" class="table table-striped-columns">
         <thead class="table-info">
         <tr>
@@ -21,6 +22,8 @@
             <th>correo</th>
             <th>Ciudad</th>
             <th>Optica</th>
+            <th></th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -35,6 +38,8 @@
             <td th:text="${paciente.correo_paciente}"></td>
             <td th:text="${paciente.id_ciudad.nombre_ciudad}"></td>
             <td th:text="${paciente.id_optica.nombre_optica}"></td>
+            <td> <a th:href="@{/cambiarEstadoPaciente/} + ${paciente.id_paciente}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+            <td> <a th:href="@{/editarPaciente/{id} (id=${paciente.id_paciente})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
 
         </tr>
@@ -45,8 +50,8 @@
 
 
 
-<footer class="footer3" >
-    <div th:replace="layout/layout :: footer"></div>
+<footer class="footer-crud" >
+    <div th:replace="layout/layout :: footerVistas"></div>
 </footer>
 </body>
 </html>

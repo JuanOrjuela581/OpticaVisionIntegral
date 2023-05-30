@@ -37,7 +37,7 @@ public class pacientesControllers {
     public String formularioCrearPaciente(Model model){
         model.addAttribute("paciente", new pacienteEntity());
         model.addAttribute("titulo", "Crear Paciente");
-        model.addAttribute("opticas", iopticaService.finAll());
+        model.addAttribute("optica", iopticaService.finAll());
         model.addAttribute("ciudad", iciudadService.finAll());
         return "crearPaciente";
     }

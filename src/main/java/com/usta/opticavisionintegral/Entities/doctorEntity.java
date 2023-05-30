@@ -76,11 +76,11 @@ public class doctorEntity implements  Serializable {
         this.especialidad_doctor = especialidad;
     }
 
-    public String getAniosExp_doctor() {
+    public String getaniosexperiencia_doctor() {
         return aniosexperiencia_doctor;
     }
 
-    public void setAniosExp_doctor(String aniosExp) {
+    public void setaniosexperiencia_doctor(String aniosExp) {
         this.aniosexperiencia_doctor = aniosExp;
     }
 

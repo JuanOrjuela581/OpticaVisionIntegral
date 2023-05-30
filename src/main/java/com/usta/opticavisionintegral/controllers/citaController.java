@@ -3,7 +3,6 @@ package com.usta.opticavisionintegral.controllers;
 import com.usta.opticavisionintegral.Entities.citaEntity;
 import com.usta.opticavisionintegral.models.services.IcitaService;
 import com.usta.opticavisionintegral.models.services.IdoctorService;
-import com.usta.opticavisionintegral.models.services.IopticaService;
 import com.usta.opticavisionintegral.models.services.IpacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -59,7 +58,7 @@ public class citaController {
         if (id > 0) {
             icitaService.remove(id);
         } else {
-            return "error500";
+            return "error";
         }
 
         return "redirect:/listarCitas";

@@ -28,8 +28,8 @@ public class proveedorController {
     @GetMapping("crearProveedor")
     public String crearProveedor(Model model) {
         model.addAttribute("titulo", "Crear Proveedor");
-        model.addAttribute("provedoor", new proveedorEntity());
-        return "crearEquipo";
+        model.addAttribute("proveedor", new proveedorEntity());
+        return "crearProveedor";
     }
 
     @PostMapping(value = "crearProveedor")
@@ -50,7 +50,7 @@ public class proveedorController {
         if (id > 0) {
             iproveedorService.remove(id);
         } else {
-            return "error500";
+            return "error";
         }
 
         return "redirect:/listarProveedores";
