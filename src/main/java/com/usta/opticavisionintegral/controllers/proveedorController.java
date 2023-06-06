@@ -50,7 +50,7 @@ public class proveedorController {
         if (id > 0) {
             iproveedorService.remove(id);
         } else {
-            return "error";
+            return "404";
         }
 
         return "redirect:/listarProveedores";

@@ -43,9 +43,7 @@ public class pacientesControllers {
     }
     @PostMapping(value = "crearPaciente")
     public String guardarPaciente(@Valid pacienteEntity paciente, BindingResult result, SessionStatus status){
-        if (result.hasErrors()){
-            return "crearPaciente";
-        }
+
         paciente.setEstado(true);
         ipacienteService.save(paciente);
         status.setComplete();
