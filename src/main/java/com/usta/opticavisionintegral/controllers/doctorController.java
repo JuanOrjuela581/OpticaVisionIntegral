@@ -48,7 +48,7 @@ public class doctorController {
         if (id > 0) {
             idoctorService.remove(id);
         } else {
-            return "error";
+            return "404";
         }
 
         return "redirect:/listarDoctores";

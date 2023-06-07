@@ -53,7 +53,7 @@ public class productoController {
             if (id > 0) {
                 iproductoService.remove(id);
             } else {
-                return "error";
+                return "404";
             }
 
             return "redirect:/listarProductos";

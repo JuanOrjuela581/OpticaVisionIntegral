@@ -36,6 +36,7 @@ public class ciudadControllers {
         if (result.hasErrors()){
             return "crearCiudad";
         }
+        ciudad.setEstado(true);
         iciudadService.save(ciudad);
         status.setComplete();
         return "redirect:/listasCiudades";
@@ -69,6 +70,7 @@ public class ciudadControllers {
     @PostMapping("editarCiudad/{id}")
     public String actualizarCiudad(@PathVariable(value = "id") Long id, @ModelAttribute("seccionalActualizar") ciudadEntity ciudad){
         ciudadEntity ciudadlExistente = iciudadService.findOne(id);
+        ciudadlExistente.setEstado(true);
         ciudadlExistente.setNombre_ciudad(ciudad.getNombre_ciudad());
 
         iciudadService.updateCiudad(ciudadlExistente);

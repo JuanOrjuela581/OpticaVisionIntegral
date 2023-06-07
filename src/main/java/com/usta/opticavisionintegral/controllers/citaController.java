@@ -58,7 +58,7 @@ public class citaController {
         if (id > 0) {
             icitaService.remove(id);
         } else {
-            return "error";
+            return "404";
         }
 
         return "redirect:/listarCitas";

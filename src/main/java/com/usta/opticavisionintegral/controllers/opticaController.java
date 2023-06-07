@@ -36,6 +36,7 @@ public class opticaController {
         if (result.hasErrors()){
             return "error 500";
         }
+        optica.setEstado(true);
         iopticaService.save(optica);
         status.setComplete();
         return "redirect:/listarOpticas";
@@ -71,6 +72,7 @@ public class opticaController {
     @PostMapping("editarOptica/{id}")
     public String actualizarOptica(@PathVariable(value = "id") Long id, @ModelAttribute("actualizarOptica")opticaEntity optica){
         opticaEntity opticaExistente = iopticaService.findOne(id);
+        opticaExistente.setEstado(true);
         opticaExistente.setNombre_optica(optica.getNombre_optica());
         opticaExistente.setDireccion_optica(optica.getDireccion_optica());
 
