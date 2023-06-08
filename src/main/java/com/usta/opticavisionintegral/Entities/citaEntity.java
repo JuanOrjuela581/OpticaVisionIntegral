@@ -45,11 +45,11 @@ public class citaEntity implements Serializable{
 
     @JoinColumn(name = "id_paciente", referencedColumnName = "id_paciente")
     @ManyToOne(fetch = FetchType.LAZY)
-    private opticaEntity id_paciente;
+    private pacienteEntity id_paciente;
 
     @JoinColumn(name = "id_doctor", referencedColumnName = "id_doctor")
     @ManyToOne(fetch = FetchType.LAZY)
-    private ciudadEntity id_doctor;
+    private doctorEntity id_doctor;
 
     public Long getId_cita() {
         return id_cita;
@@ -99,19 +99,19 @@ public class citaEntity implements Serializable{
         this.estado = estado;
     }
 
-    public opticaEntity getId_paciente() {
+    public pacienteEntity getId_paciente() {
         return id_paciente;
     }
 
-    public void setId_paciente(opticaEntity id_paciente) {
+    public void setId_paciente(pacienteEntity id_paciente) {
         this.id_paciente = id_paciente;
     }
 
-    public ciudadEntity getId_doctor() {
+    public doctorEntity getId_doctor() {
         return id_doctor;
     }
 
-    public void setId_doctor(ciudadEntity id_doctor) {
+    public void setId_doctor(doctorEntity id_doctor) {
         this.id_doctor = id_doctor;
     }
 }

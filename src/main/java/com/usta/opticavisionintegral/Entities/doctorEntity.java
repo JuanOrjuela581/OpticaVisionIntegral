@@ -41,8 +41,6 @@ public class doctorEntity implements  Serializable {
     @Column(name = "estado")
     private Boolean estado;
 
-    @OneToOne(mappedBy = "id_doctor")
-    private citaEntity id_cita;
 
     public Long getId_doctor() {
         return id_doctor;
@@ -100,12 +98,5 @@ public class doctorEntity implements  Serializable {
         this.aniosexperiencia_doctor = aniosexperiencia_doctor;
     }
 
-    public citaEntity getId_cita() {
-        return id_cita;
-    }
-
-    public void setId_cita(citaEntity id_cita) {
-        this.id_cita = id_cita;
-    }
 }
 
