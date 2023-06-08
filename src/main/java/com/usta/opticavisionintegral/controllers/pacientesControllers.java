@@ -85,7 +85,7 @@ public class pacientesControllers {
         pacienteExistente.setIdentificacion_paciente(paciente.getIdentificacion_paciente());
         pacienteExistente.setNombres_paciente(paciente.getNombres_paciente());
         pacienteExistente.setApellido_paciente(paciente.getApellido_paciente());
-        pacienteExistente.setFechaNacimiento_paciente(paciente.getFechaNacimiento_paciente());
+        pacienteExistente.setFechanacimiento_paciente(paciente.getFechanacimiento_paciente());
         pacienteExistente.setDireccion_paciente(paciente.getDireccion_paciente());
         pacienteExistente.setCorreo_paciente(paciente.getCorreo_paciente());
         pacienteExistente.setId_optica(paciente.getId_optica());

@@ -46,7 +46,7 @@
 
             <div class="form-group">
                 <label for="fechaNacimiento" class="control-label"></label>
-                <input id="fechaNacimiento" type="date" class="Fechadenacimiento" th:field="*{fechaNacimiento_paciente}" name="fechaNacimiento" placeholder="" required="true"/>
+                <input id="fechaNacimiento" type="date" class="Fechadenacimiento" th:field="*{fechanacimiento_paciente}" name="fechaNacimiento" placeholder="" required="true"/>
                 <small></small>
             </div>
 
@@ -72,7 +72,7 @@
                 </output>
             </div>
 
-            <a th:href="@{/listarPacientes}">Listar Pacientes</a>
+            <a class="link-listar" th:href="@{/listarPacientes}">Listar Pacientes</a>
 
             <div class="form-group">
                 <div class="form-label">

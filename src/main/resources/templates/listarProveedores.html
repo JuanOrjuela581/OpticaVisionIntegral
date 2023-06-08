@@ -11,7 +11,7 @@
 <br/>
 <div class="container-tabla">
   <table id="example" class="table table-striped-columns">
-    <thead class="table-info">
+    <thead class="thead-listar">
     <tr>
 
       <th>Id</th>
@@ -31,7 +31,7 @@
       <td th:text="${proveedor.telefono_proveedor}"></td>
       <td th:text="${proveedor.correo_proveedor}"></td>
       <!--<td> <a th:href="@{/eliminarProveedor/} + ${proveedor.id_proveedor}" class="btn btn-danger btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el registro?')"></a></td>-->
-      <td> <a th:href="@{/cambiarEstadoProveedor/} + ${proveedor.id_proveedor}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+      <td> <a th:href="@{/cambiarEstadoProveedor/} + ${proveedor.id_proveedor}" class="btn btn-warning btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
       <td> <a th:href="@{/editarProveedor/{id} (id=${proveedor.id_proveedor})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
     </tr>

@@ -286,6 +286,15 @@
     border-radius: 4px;
 }
 
+.link-listar{
+    color: #CF1B87;
+    position: absolute;
+    width: 166px;
+    left: 32.42%;
+    top: 59.5%;
+    bottom: 35.79%;
+}
+
 .formulario-fondo {
     /* Rectangle 516 */
     position: absolute;
@@ -1381,7 +1390,7 @@ top: 393px;
     background: #B0007F;
     width: 100%;
     height: 511px;
-    top: 100vh;
+    top: 1280px;
 }
 
 
@@ -1507,6 +1516,7 @@ top: 393px;
 }
 
 .btn-ir-inicio{
+    color: white;
     box-sizing: border-box;
 
     /* Auto layout */
@@ -1562,4 +1572,8 @@ top: 393px;
     top: 260px;
     bottom:600px;
 
+}
+
+.thead-listar{
+    background-color: #FF6AC4;
 }

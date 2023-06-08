@@ -99,12 +99,12 @@ public class pacienteEntity implements Serializable {
         this.apellido_paciente = apellido_paciente;
     }
 
-    public Date getFechaNacimiento_paciente() {
+    public Date getFechanacimiento_paciente() {
         return fechanacimiento_paciente;
     }
 
-    public void setFechaNacimiento_paciente(Date fechaNacimiento_paciente) {
-        this.fechanacimiento_paciente = fechaNacimiento_paciente;
+    public void setFechanacimiento_paciente(Date fechanacimiento_paciente) {
+        this.fechanacimiento_paciente = fechanacimiento_paciente;
     }
 
     public String getDireccion_paciente() {

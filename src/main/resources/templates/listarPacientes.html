@@ -10,8 +10,8 @@
 <h1 class="titulos-tablas-crud" th:text="${titulo}"></h1>
 <br/>
 <div class="container-tabla">
-    <table id="example" class="table table-striped-columns">
-        <thead class="table-info">
+    <table id="example" class="table table-bordered">
+        <thead class="thead-listar">
         <tr>
             <th>Codigo</th>
             <th>Identificacion</th>
@@ -33,12 +33,12 @@
             <td th:text="${paciente.identificacion_paciente}"></td>
             <td th:text="${paciente.nombres_paciente}"></td>
             <td th:text="${paciente.apellido_paciente}"></td>
-            <td th:text="${paciente.fechaNacimiento_paciente}"></td>
+            <td th:text="${paciente.fechanacimiento_paciente}"></td>
             <td th:text="${paciente.direccion_paciente}"></td>
             <td th:text="${paciente.correo_paciente}"></td>
             <td th:text="${paciente.id_ciudad.nombre_ciudad}"></td>
             <td th:text="${paciente.id_optica.nombre_optica}"></td>
-            <td> <a th:href="@{/cambiarEstadoPaciente/} + ${paciente.id_paciente}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+            <td> <a th:href="@{/cambiarEstadoPaciente/} + ${paciente.id_paciente}" class="btn btn-warning btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
             <td> <a th:href="@{/editarPaciente/{id} (id=${paciente.id_paciente})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
 
@@ -48,10 +48,9 @@
     <a th:href="@{/crearPaciente}" class="btn btn-primary">Registrar Paciente</a>
 </div>
 
-
-
 <footer class="footer-crud" >
     <div th:replace="layout/layout :: footerVistas"></div>
 </footer>
+
 </body>
 </html>

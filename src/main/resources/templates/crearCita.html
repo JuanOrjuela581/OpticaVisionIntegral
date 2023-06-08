@@ -22,7 +22,7 @@
 
             <div class="form-group">
                 <label for="precio" class="control-label"></label>
-                <input id="precio" type="text" class="Apellido" th:field="*{precio_cita}" name="precio" placeholder="Precio" required="true"/>
+                <input id="precio" type="number" class="Apellido" th:field="*{precio_cita}" name="precio" placeholder="Precio" required="true"/>
                 <small></small>
             </div>
 
@@ -51,7 +51,7 @@
 
 
             <div class="form-group">
-                <output class="Optica">
+                <output class="Numerodedocumento">
                     <label for="iddoctor"></label>
                     <select id="iddoctor" class="form-control" th:field="*{id_doctor}" name="iddoctor" >
                         <option th:each="doc:${doc}" th:value="${doc.id_doctor}" th:text="${doc.nombre_doctor}" th:if="${doc.estado}==true">
@@ -61,7 +61,7 @@
                 </output>
             </div>
 
-            <a th:href="@{/listarCitas.html}">Listar Citas</a>
+            <a class="link-listar" th:href="@{/listarCitas.html}">Listar Citas</a>
 
             <div class="form-group">
                 <div class="form-label">

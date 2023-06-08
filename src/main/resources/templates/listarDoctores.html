@@ -11,7 +11,7 @@
 <br/>
 <div class="container-tabla">
   <table id="example" class="table table-striped-columns">
-    <thead class="table-info">
+    <thead class="thead-listar">
     <tr>
       <th>Id</th>
       <th>Nombres</th>
@@ -30,7 +30,7 @@
       <td th:text="${doctor.apellido_doctor}"></td>
       <td th:text="${doctor.especialidad_doctor}"></td>
       <td th:text="${doctor.aniosexperiencia_doctor}"></td>
-      <td> <a th:href="@{/cambiarEstadoDoctor/} + ${doctor.id_doctor}" class="btn btn-warning btn-xs" th:text="'Eliminar Estado'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
+      <td> <a th:href="@{/cambiarEstadoDoctor/} + ${doctor.id_doctor}" class="btn btn-warning btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
       <td> <a th:href="@{/editarDoctor/{id} (id=${doctor.id_doctor})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
 

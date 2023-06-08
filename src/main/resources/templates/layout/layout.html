@@ -19,7 +19,7 @@
 
 <!-- Inicio Navbar -->
 <nav th:fragment="navbar">
-  <a href="index.php" class="logo-enlace">
+  <a th:href="@{/Index}" class="logo-enlace">
     <img th:src="@{/images/logo-footer.png}" width="244px" height="198px">
   </a>
 
@@ -78,12 +78,11 @@
     <div class="enlaces-footer2">
         <h3 class="enlaces-titulo-footer2">Compañia</h3>
         <ul>
-            <li><a th:href="@{/Index}">Inicio</a> </li>
-            <li><a th:href="@{/AboutUs}">Acerca de Nosotros</a> </li>
-            <li><a th:href="@{/crearPaciente}">Opticitas</a></li>
-            <li><a th:href="@{/Servicios}">Servicios</a></li>
-            <li><a th:href="@{/Sedes}">Sedes</a></li>
-            <li><a th:href="@{/AtencionUsuario}">Atencion al usuario</a></li>
+            <li><a th:href="@{/listarPacientes}" class="active">Listar Pacientes</a></li>
+            <li><a th:href="@{/listarProductos}">Listar Productos</a></li>
+            <li><a th:href="@{/listarProveedores}">Listar Proveedores</a></li>
+            <li><a th:href="@{/listarCitas}">Listar Citas</a></li>
+            <li><a th:href="@{/listarDoctores}">Listar Doctores</a></li>
         </ul>
     </div>
 

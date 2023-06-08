@@ -27,7 +27,7 @@ public class citaEntity implements Serializable{
     @NotNull
     @Size(min = 1, max = 20)
     @Column(name = "precio_cita")
-    private String precio_cita;
+    private Integer precio_cita;
 
     @NotNull
     @Size(min = 1, max = 30)
@@ -51,6 +51,7 @@ public class citaEntity implements Serializable{
     @JoinColumn(name = "id_doctor")
     private doctorEntity id_doctor;
 
+
     public Long getId_cita() {
         return id_cita;
     }
@@ -67,12 +68,20 @@ public class citaEntity implements Serializable{
         this.fecha_cita = fecha_cita;
     }
 
-    public String getPrecio_cita() {
+    public Integer getPrecio_cita() {
         return precio_cita;
     }
 
-    public void setPrecio_cita(String precio_cita) {
+    public void setPrecio_cita(Integer precio_cita) {
         this.precio_cita = precio_cita;
+    }
+
+    public pacienteEntity getId_paciente() {
+        return id_paciente;
+    }
+
+    public void setId_paciente(pacienteEntity id_paciente) {
+        this.id_paciente = id_paciente;
     }
 
     public String getEps_cita() {
