@@ -281,18 +281,47 @@
     background: #CF1B87;
     /* Border/border-white */
 
-    border: 1px solid #FFFFFF;
+    border: #CF1B87;
     box-shadow: 0px 4px 4px rgba(43, 37, 37, 0.12);
     border-radius: 4px;
 }
 
+.btn-guardar:hover{
+    color: white !important;
+    box-shadow: 0 4px 16px rgb(207, 27, 135);
+    transition: all 0.2s ease;
+}
+
 .link-listar{
-    color: #CF1B87;
+    color: black;
     position: absolute;
     width: 166px;
     left: 32.42%;
     top: 59.5%;
     bottom: 35.79%;
+}
+
+.link-listar:hover{
+    color: #CF1B87;
+    text-decoration: none;
+}
+
+.link-listar:before{
+    content: '';
+    border-bottom: 2px solid #CF1B87;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+
+    width: 0%;
+    bottom: 0;
+    left: 0;
+}
+
+.link-listar:hover:before{
+    opacity: 1;
+    width: 65%;
+    bottom: 0;
 }
 
 .formulario-fondo {
@@ -1538,6 +1567,11 @@ top: 393px;
     border: 0.998336px solid #FFFFFF;
     box-shadow: 0px 3.99334px 3.99334px rgba(43, 37, 37, 0.12);
     border-radius: 3.99334px;
+}
+
+.btn-ir-inicio:hover{
+    text-decoration: none;
+    color: black;
 }
 
 /*Estilos de los listar de crud*/

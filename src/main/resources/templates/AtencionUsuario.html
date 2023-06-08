@@ -4,7 +4,7 @@
 <head th:replace="layout/layout :: head"></head>
 
 
-<body>
+<body class="fondo-atencion">
 <div class="nav-header2">
     <nav th:replace="layout/layout :: navbar"></nav>
 </div>
@@ -12,9 +12,9 @@
 
 <div class="bienvenida">
     <h1 class="titulo-sedes">Atencion Al Usuario</h1>
-    <button onclick="location.href='src\views\AboutUs\AboutUs.php'" class="boton-opticitas">
-        Contactenos
-    </button>
+    <a th:href="@{/crearPaciente}"> <button class="boton-opticitas">
+        Continuar a Opticitas
+    </button> </a>
 
 </div>
 

@@ -124,7 +124,9 @@
 
 <!--Navbar del CRUD-->
 <nav th:fragment="navbarCRUD" class="nav-headerblanco">
-    <a th:href="@{/Index}" class="inicio-navbar-crud">Inicio</a>
+    <a th:href="@{/Index}" class="logo-enlace">
+        <img th:src="@{/images/logo-footer.png}" width="244px" height="198px">
+    </a>
 
     <ul>
         <li><a th:href="@{/listarPacientes}" class="active">Listar Pacientes</a></li>

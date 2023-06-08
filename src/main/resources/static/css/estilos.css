@@ -41,10 +41,7 @@ nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
-}
-a:hover,
-a:focus {
-    background-size: 100% 500px;
+
 }
 
 
@@ -56,8 +53,34 @@ nav ul li a {
     border-radius: 3px;
     text-transform: uppercase;
     position: relative;
+
 }
 
+nav ul li a:hover{
+    text-decoration: none;
+    color:  #CF1B87;
+}
+
+
+nav ul li a::before{
+    content: '';
+    border-bottom: 2px solid #CF1B87;
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+
+    width: 0%;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+nav ul li a:hover::before{
+    opacity: 1;
+    width: 100%;
+    bottom: 0;
+}
 
 
 
@@ -114,6 +137,7 @@ p {
 }
 
 button {
+    color: white;
     position: absolute;
     width: 199px;
     height: 56px;
@@ -122,6 +146,12 @@ button {
     box-shadow: 0px 4px 4px rgba(43, 37, 37, 0.12);
     font-family: 'Space Grotesk';
     font-weight: 700;
+}
+
+.button:hover{
+    color: white !important;
+    box-shadow: 0 4px 16px rgb(207, 27, 135);
+    transition: all 0.2s ease;
 }
 
 /*A partir de aca se aplican estilos al footer */
@@ -781,9 +811,27 @@ a:focus {
     top: -50px;
 }
 
-/*Body del about us fondo*/
-.acerca-de-nosotros {
+/*Fondos de presentacion de todas las paginas*/
+.fondo-acerca-de-nosotros{
+    background: url("https://images.pexels.com/photos/5752254/pexels-photo-5752254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.fondo-servicios {
     background: url("https://latarde.com/wp-content/webp-express/webp-images/uploads/2021/04/examen-ocular.jpg.webp");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
+}
+
+.fondo-sedes{
+    background: url("https://images.pexels.com/photos/5752281/pexels-photo-5752281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.fondo-atencion{
+    background: url("https://images.pexels.com/photos/5996653/pexels-photo-5996653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
 }

@@ -41,7 +41,7 @@
             <div class="form-group">
                 <output class="Pais">
                     <label for="idpaciente"></label>
-                    <select id="idpaciente" class="form-control" th:field="*{idPaciente}" name="idpaciente" >
+                    <select id="idpaciente" class="form-control" th:field="*{id_paciente}" name="idpaciente" >
                         <option th:each="paciente:${pac}" th:value="${paciente.id_paciente}" th:text="${paciente.nombres_paciente}" th:if="${paciente.estado}==true">
 
                         </option>

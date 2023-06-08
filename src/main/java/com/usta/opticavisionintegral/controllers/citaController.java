@@ -37,7 +37,7 @@ public class citaController {
         model.addAttribute("cita", new citaEntity());
         model.addAttribute("titulo","Crear Cita");
         model.addAttribute("pac", ipacienteService.selectOnePac());
-        model.addAttribute("doc", idoctorService.selectOneDoc());
+        model.addAttribute("doc", idoctorService.findAll());
         return "crearCita";
     }
     @PostMapping(value = "crearCita")
@@ -79,7 +79,7 @@ public class citaController {
         model.addAttribute("titulo", "Editar Cita");
         model.addAttribute("citaactualizar", icitaService.findOne(id));
         model.addAttribute("pac", ipacienteService.selectOnePac());
-        model.addAttribute("doc", idoctorService.selectOneDoc());
+        model.addAttribute("doc", idoctorService.findAll());
         return "editarCita";
     }
 

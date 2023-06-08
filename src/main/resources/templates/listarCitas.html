@@ -10,7 +10,7 @@
 <h1 class="titulos-tablas-crud" th:text="${titulo}"></h1>
 <br/>
 <div class="container-tabla">
-  <table id="example" class="table table-striped-columns">
+  <table id="example" class="table table-bordered">
     <thead class="thead-listar">
     <tr>
 
@@ -35,7 +35,7 @@
       <td th:text="${cita.precio_cita}"></td>
       <td th:text="${cita.eps_cita}"></td>
       <td th:text="${cita.motivo_cita}"></td>
-      <td th:text="${cita.idPaciente.nombres_paciente}"></td>
+      <td th:text="${cita.id_paciente.nombres_paciente}"></td>
       <td th:text="${cita.id_doctor.nombre_doctor}"></td>
       <!--<td> <a th:href="@{/eliminarCita/} + ${cita.id_cita}" class="btn btn-danger btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el registro?')"></a></td>-->
       <td> <a th:href="@{/cambiarEstadoCita/} + ${cita.id_cita}" class="btn btn-warning btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
