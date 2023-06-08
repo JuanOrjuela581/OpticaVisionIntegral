@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 
 <head th:replace="layout/layout :: head"></head>
 
@@ -39,7 +39,7 @@
       <td th:text="${cita.id_doctor.nombre_doctor}"></td>
       <!--<td> <a th:href="@{/eliminarCita/} + ${cita.id_cita}" class="btn btn-danger btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el registro?')"></a></td>-->
       <td> <a th:href="@{/cambiarEstadoCita/} + ${cita.id_cita}" class="btn btn-warning btn-xs" th:text="'Eliminar'" onclick="return confirm('¿Estas seguro de eliminar el estado?')"></a></td>
-      <td> <a th:href="@{/editarCita.html/{id} (id=${cita.id_cita})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
+      <td> <a th:href="@{/editarCita/{id} (id=${cita.id_cita})}" class="btn btn-info btn-xs" th:text="'Editar'" ></a></td>
 
     </tr>
     </tbody>
