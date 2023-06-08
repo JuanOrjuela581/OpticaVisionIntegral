@@ -91,7 +91,7 @@ public class citaController {
         citaExistente.setPrecio_cita(cita.getPrecio_cita());
         citaExistente.setEps_cita(cita.getEps_cita());
         citaExistente.setMotivo_cita(cita.getMotivo_cita());
-        citaExistente.setIdPaciente(cita.getIdPaciente());
+        citaExistente.setId_paciente(cita.getId_paciente());
         citaExistente.setId_doctor(cita.getId_doctor());
 
         icitaService.updateCita(citaExistente);
