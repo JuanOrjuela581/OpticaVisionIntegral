@@ -830,6 +830,24 @@ top: 393px;
 
 }
 
+.elipse2{
+    position: absolute;
+    left: 65.85%;
+    right: -7.41%;
+    top: 0.86%;
+    bottom: 88.45%;
+
+    height: 664.0094742554897px;
+    width: 568.5575691866096px;
+    left: 448.197265625px;
+    top: 11px;
+    border-radius: 0px;
+
+    background: rgba(207, 27, 135, 0.23);
+    transform: rotate(74.25deg);
+    border-radius: 50%;
+}
+
 
 .contenido-sedes {
     height: calc(3697px - 100vh);
@@ -1096,7 +1114,47 @@ top: 393px;
 }
 
 /*Desde aqui va el codigo de  atencion al usuario*/
+.titulo-atencion{
+    position: absolute;
+    left: 15.49%;
+    right: 15.49%;
+    top: 35.21%;
+    bottom: 85.72%;
 
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 107.611px;
+    line-height: 120%;
+    /* or 129px */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.878891px;
+    text-transform: capitalize;
+    font-feature-settings: 'zero' on;
+
+    color: #FFFFFF;
+}
+
+.elipse3{
+    position: absolute;
+    left: 20.85%;
+    right: 7.41%;
+    top: 20.86%;
+    bottom: 88.45%;
+
+    height: 234.0094742554897px;
+    width: 856.5575691866096px;
+
+
+    border-radius: 0px;
+
+    background: rgba(207, 27, 135, 0.23);
+    transform: rotate(-2deg);
+    border-radius: 50%;
+}
 .contenido-atencion {
     height: calc(2662px - 100vh);
     top: 100vh;
